@@ -14,8 +14,8 @@ angular.module('myApp.main', ['ngRoute'])
 
   $scope.gamemenu = [
                         {name:"Browse", glyph:"search", link:"games"},
-                        {name:"Favorites", glyph:"star-empty", link:""},
-                        {name:"History", glyph:"time", link:""},
+                        {name:"Favorites", glyph:"star-empty", link:"games/favorites"},
+                        {name:"History", glyph:"time", link:"games/history"},
                         {name:"Random", glyph:"random", link:"games/random"},
                         {name:"Tags", glyph:"tag", link:"games/tags"},
                      ]

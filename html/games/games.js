@@ -17,6 +17,7 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
   }
   $scope.searchbar = ''
   $scope.chosentags = {}
+  $scope.history = []
 //turns strings into arrays, keeps arrays as they are
   $scope.stringtoArr = function(thing) {
     if (thing[0].length == 1) {
@@ -73,6 +74,77 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     }
   }
 
+  $scope.removeDuplicates = function(list) {
+    //check for duplicates
+    var dupes = []
+    for (var l in list) {
+      if (list.indexOf(list[l]) != l) {
+        dupes.push(l)
+      }
+    }
+    var newlist = []
+    for (var l in list) {
+      if (dupes.indexOf(l) == -1) {
+        newlist[l] = list[l]
+      }
+    }
+    return list
+  }
+
+  $scope.addCookie = function(game,cookie) {
+    var hist = $cookies.get('webProv'+cookie)
+    if (hist) {
+      hist = hist.split('|')
+    } else {
+      hist = []
+    }
+    while (hist.length >= 24) {
+      hist.pop()
+    }
+    if (hist.indexOf(game) == -1) {
+      hist.unshift(game)
+    }
+    hist = $scope.removeDuplicates(hist)
+    hist = hist.join('|')
+
+    // Setting a cookie
+    $scope.saveCookie(hist,cookie);
+    $scope.getHistory();
+    $scope.getFavorites();
+  }
+
+  $scope.saveCookie = function(string, type) {
+    var expireDate = new Date();
+    expireDate.setYear(expireDate.getFullYear() + 1);
+    $cookies.put('webProv'+type, string, {'expires': expireDate});
+    $log.info(string)
+  }
+
+  $scope.removeFav = function(game) {
+    $scope.getFavorites();
+    var i = $scope.favorites.indexOf(game)
+    $scope.favorites.splice(i,1)
+    $scope.saveCookie($scope.favorites.join('|'), "Favorites")
+    $scope.getFavorites();
+
+  }
+  $scope.getHistory = function() {
+    $scope.history = []
+    var f = $cookies.get('webProvHistory')
+    if (f) {
+      $scope.history = f.split('|')
+    }
+  }
+
+
+  $scope.getFavorites = function() {
+    $scope.favorites = []
+    var f = $cookies.get('webProvFavorites')
+    if (f) {
+      $scope.favorites = f.split('|')
+    }
+  }
+
   $scope.buttonStyle = function(value) {
     return "btn-info"
   }
@@ -89,17 +161,14 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     $scope.getTags()
   }
   var initPage = function() {
-    var expireDate = new Date();
-    expireDate.setYear(expireDate.getFullYear() + 1);
-    // Setting a cookie
-    $cookies.put('myFavorite', 'oatmeal', {'expires': expireDate});
-
-    $log.info($scope.a)
     $scope.taglist = {}
     $scope.chosentags = {}
     $scope.emptytags = {}
     $scope.chosengame = null
     $scope.view = false
+    $scope.getHistory();
+    $scope.getFavorites();
+
     if (!$scope.games) {
       $http.get("/api/game/all").success(function (response) {
           $scope.games = response
@@ -110,12 +179,17 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
             } else if ($routeParams.entityid == "tags") {
               $scope.getTags();
               $scope.view = 'tags'
+            } else if ($routeParams.entityid == "history") {
+              $scope.view = "history"
+            } else if ($routeParams.entityid == "favorites") {
+              $scope.view = "favorites"
             } else {
               for (var g in $scope.games) {
                 if ($scope.games[g].name.toLowerCase() == $routeParams.entityid.toLowerCase()) {
                   $scope.chosengame = $scope.games[g]
                 }
               }
+              $scope.addCookie($routeParams.entityid,"History")
             }
 
             if ($scope.chosengame) {
@@ -128,6 +202,12 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
               }
               //if it only has one tag, angular tries to iterate through the string. we stop it here.
               $scope.chosengame.tags.tag = $scope.stringtoArr($scope.chosengame.tags.tag)
+              if ($scope.chosengame.aliases){
+                $scope.chosengame.aliases.alias = $scope.stringtoArr($scope.chosengame.aliases.alias)
+              }
+              if ($scope.chosengame.relations){
+                $scope.chosengame.relations.relation = $scope.stringtoArr($scope.chosengame.relations.relation)
+              }
             }
           } else {
             $scope.view = 'all'
