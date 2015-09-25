@@ -6,7 +6,7 @@ angular.module('myApp', [
   'myApp.main',
   'myApp.games',
   'myApp.version',
-  'myApp.code',
+  'myApp.word',
   'myApp.words'
 ]).
 config(['$routeProvider', function($routeProvider) {
@@ -25,6 +25,11 @@ config(['$routeProvider', function($routeProvider) {
     controller: "gamesCtrl",
     title: "games",
     templateUrl: "/html/games/games.html"
+  })
+  .when("/word/:entityid?", {
+    controller: "wordCtrl",
+    title: "word",
+    templateUrl: "/html/word/word.html"
   })
   .otherwise({redirectTo: '/main'});
 }]);

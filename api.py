@@ -17,33 +17,31 @@ class GameList(webapp2.RequestHandler):
     data = x.read()
     d = xmltodict.parse(data)
     c = json.dumps(d['dataroot']['item'])
-
+    x.close()
     self.response.status = 200
     self.response.write(c)
 
-class TagList(webapp2.RequestHandler):
-  def get(self):
-    x = open('iprov.xml')
-    data = x.read()
-    d = xmltodict.parse(data)
-    c = d['dataroot']['item']
-    out = {}
-    for item in c:
-      a = item['tags']['tag']
-      #turn the ones that are strings into lists
-      if len(a[0]) == 1:
-        a = [a]
-      for tag in a:
-        try:
-          out[tag] += 1
-        except KeyError:
-          out[tag] = 1
-    self.response.status = 200
-    self.response.write(json.dumps(out))
+class GetWord(webapp2.RequestHandler):
+  def get(self,wordtype):
+    r = {'adj':[30,18185], 'noun':[30,82144], 'verb':[30,13796], 'adv':[30,3650]}
+    x = open("data."+wordtype)
+    z = x.readlines()
+    logging.info(wordtype)
+    index = random.randint(r[wordtype][0], r[wordtype][1])
+    line = z[index]
+    d = line.split('|')
+    definition = d[-1]
+    word = d[0].split(' ')[4]
+    word = word.replace('_',' ')
+    out = {'def':definition, 'word':word}
 
+
+
+    self.response.write(json.dumps(out))
 
 
 application = webapp2.WSGIApplication( [
   ("/api/game/(.*)", GameList),
-  ("/api/tags/", TagList),
+  ("/api/word/(.*)", GetWord),
+
 ], debug=True)

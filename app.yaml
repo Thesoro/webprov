@@ -20,6 +20,8 @@ handlers:
     static_dir: js
   - url: /fonts
     static_dir: fonts
+  - url: /dict
+    static_dir: dict
 
 # Main html page
   - url: /api/.*
