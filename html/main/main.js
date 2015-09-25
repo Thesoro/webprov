@@ -9,8 +9,8 @@ angular.module('myApp.main', ['ngRoute'])
 //   });
 // }])
 
-.controller('mainCtrl', ['$scope','$http','$location'
-  ,function($scope,$http,$location) {
+.controller('mainCtrl', ['$scope','$http','$location','$log'
+  ,function($scope,$http,$location,$log) {
 
   $scope.gamemenu = [
                         {name:"Browse", glyph:"search", link:"games"},
@@ -20,12 +20,12 @@ angular.module('myApp.main', ['ngRoute'])
                         {name:"Tags", glyph:"tag", link:"games/tags"},
                      ]
   $scope.suggestionmenu = [
-                        {name:"Noun", glyph:"", letter:"n.", link:""},
-                        {name:"Verb", glyph:"", letter:"v.", link:""},
-                        {name:"Adjective", glyph:"", letter:"a.", link:""},
+                        {name:"Noun", glyph:"", letter:"n.", link:"word/noun"},
+                        {name:"Verb", glyph:"", letter:"v.", link:"word/verb"},
+                        {name:"Adjective", glyph:"", letter:"a.", link:"word/adj"},
                         {name:"Title", glyph:"", letter:"M.", link:""},
-                        {name:"Two-too-to", glyph:"", letter:"T.t.t", link:""},
-                        {name:"Movies", glyph:"film", link:""},
+                        {name:"Two-too-to", glyph:"", letter:"T.t.t", link:"word/ttt"},
+                        {name:"Movies", glyph:"film", link:"movie"},
                      ]
   $scope.moremenu = [
                         {name:"About", glyph:"info-sign", link:""},

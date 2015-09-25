@@ -7,7 +7,7 @@ angular.module('myApp', [
   'myApp.games',
   'myApp.version',
   'myApp.word',
-  'myApp.words'
+  'myApp.movie'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -30,6 +30,11 @@ config(['$routeProvider', function($routeProvider) {
     controller: "wordCtrl",
     title: "word",
     templateUrl: "/html/word/word.html"
+  })
+  .when("/movie/", {
+    controller: "movieCtrl",
+    title: "movie",
+    templateUrl: "/html/movie/movie.html"
   })
   .otherwise({redirectTo: '/main'});
 }]);

@@ -1,13 +1,22 @@
 <div class="col-xs-12">
-  {{wordtype}}
-</div>
-<div class="col-xs-12">
   <ul class="list-group">
+    <span ng-if="wordtype == 'ttt'">
+      <li class="list-group-item">
+        <div class="col-xs-11 col-xs-offset-1">Two {{wordlist['noun']['word']}}s</div>
+        <div class="col-xs-10 col-xs-offset-2">too {{wordlist['adj']['word']}}</div>
+        <div class="col-xs-9 col-xs-offset-3">to {{wordlist['verb']['word']}}</div>
+        <div class="clearfix"></div>
+      </li>
+    </span>
+
+    <span ng-if="wordtype != 'ttt'">
     <li class="list-group-item">
       <h1>{{w.word}}</h1>
     </li>
     <li class="list-group-item">
       {{w.def}}
     </li>
+    </span>
   </ul>
 </div>
+
