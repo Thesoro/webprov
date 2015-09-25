@@ -17,7 +17,7 @@ angular.module('myApp.main', ['ngRoute'])
                         {name:"Favorites", glyph:"star-empty", link:""},
                         {name:"History", glyph:"time", link:""},
                         {name:"Random", glyph:"random", link:"games/random"},
-                        {name:"Tags", glyph:"tag", link:""},
+                        {name:"Tags", glyph:"tag", link:"games/tags"},
                      ]
   $scope.suggestionmenu = [
                         {name:"Noun", glyph:"", letter:"n.", link:""},

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.games', ['ngRoute'])
+angular.module('myApp.games', ['ngRoute','ngCookies'])
 
 // .config(['$routeProvider', function($routeProvider) {
 //   $routeProvider.when('/games', {
@@ -9,8 +9,8 @@ angular.module('myApp.games', ['ngRoute'])
 //   });
 // }])
 
-.controller('gamesCtrl', ['$scope','$http','$routeParams','$log','$location',
-  function($scope,$http,$routeParams,$log,$location) {
+.controller('gamesCtrl', ['$scope','$http','$routeParams','$log','$location','$cookies',
+  function($scope,$http,$routeParams,$log,$location,$cookies) {
 
   $scope.chooseGame = function(name) {
     $location.url("/games/"+name);
@@ -33,11 +33,13 @@ angular.module('myApp.games', ['ngRoute'])
     var tgs = $scope.stringtoArr(item.tags.tag)
     var tagkeys = Object.keys($scope.chosentags)
     if (tagkeys.length) {
+      var matchall = true
       for (var tag in tagkeys) {
-        if (tgs.indexOf(tagkeys[tag]) != -1) {
-          out = true
+        if (tgs.indexOf(tagkeys[tag]) == -1) {
+          matchall = false
         }
       }
+      out = matchall
     } else {
       out = true
     }
@@ -85,6 +87,12 @@ angular.module('myApp.games', ['ngRoute'])
     $scope.getTags()
   }
   var initPage = function() {
+    var expireDate = new Date();
+    expireDate.setYear(expireDate.getFullYear() + 1);
+    // Setting a cookie
+    $cookies.put('myFavorite', 'oatmeal', {'expires': expireDate});
+
+    $log.info($scope.a)
     $scope.taglist = {}
     $scope.chosentags = {}
     $scope.emptytags = {}
@@ -94,9 +102,9 @@ angular.module('myApp.games', ['ngRoute'])
       $http.get("/api/game/all").success(function (response) {
           $scope.games = response
           if ($routeParams.entityid) {
+            $scope.view = 'game'
             if ($routeParams.entityid == "random") {
               $scope.chosengame = $scope.games[Math.floor(Math.random() * ($scope.games.length))];
-              $scope.view = 'game'
             } else if ($routeParams.entityid == "tags") {
               $scope.getTags();
               $scope.view = 'tags'
