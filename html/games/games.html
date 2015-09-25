@@ -22,16 +22,6 @@
     </ul>
   </div>
 </div>
-<div ng-if="view=='all'">
-  <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-    <input type="text" class="form-control" placeholder="search..." ng-model="searchbar"></input>
-  </div>
-
-  <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-    <ul class="list-group">
-      <li ng-repeat="game in games | filter:searchbar | filter:filterByTags" class="list-group-item" style="cursor:pointer;" ng-click="chooseGame(game.name)">{{game.name}}</li>
-  </div>
-</div>
 
 <div ng-if="view=='tags'" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
   <ul class="list-group">
@@ -40,4 +30,16 @@
   <ul class="list-group">
     <li class="list-group-item"><button class="btn btn-lg" ng-click="addTag(key)" ng-if="!chosentags[key]"ng-class="buttonStyle(value)" ng-repeat="(key, value) in taglist">{{key}}:::{{value}}</button></li>
     </ul>
+</div>
+
+
+<div ng-if="view=='all' || view == 'tags'">
+  <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <input type="text" class="form-control" placeholder="search..." ng-model="searchbar"></input>
+  </div>
+
+  <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <ul class="list-group">
+      <li ng-repeat="game in games | filter:searchbar | filter:filterByTags" class="list-group-item" style="cursor:pointer;" ng-click="chooseGame(game.name)">{{game.name}}</li>
+  </div>
 </div>

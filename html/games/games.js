@@ -31,10 +31,10 @@ angular.module('myApp.games', ['ngRoute'])
   $scope.filterByTags = function(item) {
     var out = false
     var tgs = $scope.stringtoArr(item.tags.tag)
-
-    if ($scope.chosentags.length) {
-      for (var tag in $scope.chosentags) {
-        if (tgs.indexOf($scope.chosentags[tag]) != -1) {
+    var tagkeys = Object.keys($scope.chosentags)
+    if (tagkeys.length) {
+      for (var tag in tagkeys) {
+        if (tgs.indexOf(tagkeys[tag]) != -1) {
           out = true
         }
       }
