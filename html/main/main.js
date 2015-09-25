@@ -41,7 +41,7 @@ angular.module('myApp.main', ['ngRoute'])
     $location.url("/"+page)
   }
   var initPage = function() {
-    $http.get("/game/all").success(function (response) {
+    $http.get("/api/game/all").success(function (response) {
       $scope.games = response
     })
   }

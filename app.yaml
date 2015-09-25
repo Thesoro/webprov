@@ -22,6 +22,8 @@ handlers:
     static_dir: fonts
 
 # Main html page
+  - url: /api/.*
+    script: api.application
   - url: /.*
     script: main.application
 
