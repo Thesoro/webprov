@@ -25,7 +25,10 @@
 
 <div ng-if="view=='tags'" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
   <ul class="list-group">
-    <li class="list-group-item"><button class="btn btn-md" ng-click="addTag(key)" ng-if="!chosentags[key]"ng-class="buttonStyle(value)" style="margin-right:0.3em;margin-bottom:0.3em;" ng-repeat="(key, value) in taglist">{{key}}:::{{value}}</button></li>
+    <li class="list-group-item">
+      <span ng-repeat="(key, value) in taglist" ng-if="!chosentags[key]"><button ng-click="addTag(key)" class="btn btn-md" ng-class="buttonStyle(value)" style="margin-right:0.3em;margin-bottom:0.3em;" >{{key}}</button><span class="unread-count">{{value}}</span>
+      </span>
+    </li>
   </ul>
 
   <ul class="list-group">

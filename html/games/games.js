@@ -76,7 +76,9 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
   $scope.buttonStyle = function(value) {
     return "btn-info"
   }
-
+  $scope.addCount = function() {
+    return "unread-count"
+  }
   $scope.addTag = function(key) {
     $scope.chosentags[key] = true
     $scope.getTags()
