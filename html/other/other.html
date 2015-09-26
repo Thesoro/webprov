@@ -27,3 +27,195 @@
     </li>
   </ul>
 </div>
+
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" ng-if="view=='submit'">
+  <ul class="list-group">
+    <li class="list-group-item"><h2>Submit Game</h2></li>
+    <li class="list-group-item">
+      <h3>Thanks for taking an interest in contributing to webProv!<h3>
+        <h5>If you have a game, handle, or form that doesn't currently exist in the app, We'd love to hear about it. Here are some things you should know first:</h5>
+    </li>
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      All submissions are subject to review and editing. Submitting does not guarantee inclusion.
+    </li>
+    <li class="list-group-item">
+      We will make an effort to credit all submissions in the app, but by submitting content you are freely dedicating it to the iProv Database, which is itself licensed under the Creative Commons and may be used for other purposes by anyone without any attribution to the individual contributors.<br>
+      <sub><a href="http://www.creativecommons.org">See the iProv Database License</a></sub>
+    </li>
+    <li class="list-group-item">
+      Please do not submit any content that is subject ot copyright.
+    </li>
+    <li class="list-group-item">
+      There is no timetable for releases. webProv is a labor of love and love is fickle.
+    </li>
+    <li class="list-group-item">
+      <button class="btn btn-lg btn-primary" ng-click="changeView('inputform')">OK JUST OK</button>
+    </li>
+  </ul>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" ng-if="view=='settings'">
+  <ul class="list-group">
+    <li class="list-group-item"><h2>Settings</h2></li>
+    <li class="list-group-item">
+      webProv stores game history and favs in browser cookies. The data is very small (less than 4KB). We do not store any other cookies or track or send any other information.
+      If you would like to delete these cookies, you may do so via your browser settings, or here:
+    </li>
+    <li class="list-group-item">
+      <button class="btn btn-sm btn-danger" ng-disabled="delhist" ng-click="delCookie('History')">Delete History</button> <span ng-if="delhist">History deleted!</span>
+    </li>
+    <li class="list-group-item">
+      <button class="btn btn-sm btn-danger" ng-disabled="delfavs" ng-click="delCookie('Favorites')">Delete Favorites</button> <span ng-if="delfavs">Favorites deleted!</span>
+    </li>
+  </ul>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" ng-if="view=='inputform'">
+  <ul class="list-group">
+    <li class="list-group-item"><h2>Form</h2></li>
+    <li class="list-group-item">
+      How many games are you submitting?<br>
+      <ul class="nav nav-pills" style="margin-top:0.2em;">
+        <li ng-class="{active:!manysub}" ng-click="manysub = !manysub"><a style="border:1px solid #dddddd">A few!</a></li>
+        <li ng-class="{active:manysub}" ng-click="manysub = !manysub"><a style="border:1px solid #dddddd">Lots!</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="list-group" ng-if="manysub">
+    <li class="list-group-item">
+      <h3>Ok! It's probably going to be easiest all around if you use the <a href="http://www.iprov.org/submissions">iProv instructions</a> for that.</h3>
+    </li>
+  </ul>
+
+  <ul class="list-group" ng-if="!manysub">
+    <li class="list-group-item">
+      <h4>Is this game a variant of an existing game?</h4>
+      <ul class="nav nav-pills" style="margin-bottom:0.5em;">
+        <li style="cursor:pointer;" ng-class="{active:submission.isvariant}" ng-click="submission.isvariant = !submission.isvariant;selectGame('')"><a style="border:1px solid #dddddd">Yes it is!</a></li>
+        <li style="cursor:pointer;" ng-class="{active:!submission.isvariant}" ng-click="submission.isvariant = !submission.isvariant;selectGame('none')"><a style="border:1px solid #dddddd">No, it's not</a></li>
+      </ul>
+      <div ng-if="submission.isvariant">
+        <div style="height:30vh;overflow-y:auto;">
+         <table class="table table-striped">
+            <tbody>
+              <tr ng-repeat="game in games">
+                <td style="cursor:pointer;" ng-style="activeTable(game)" ng-click="selectGame(game)">{{game.name}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <ul class="list-group" style="margin-top:0.8em;" ng-if="selectedgame && selectedgame != 'none'">
+          <li class="list-group-item">
+            {{selectedgame.description}}
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="list-group" ng-if="!manysub && submission.isvariant && selectedgame && selectedgame != 'none'">
+    <li class="list-group-item">Describe your variant.</li>
+    <li class="list-group-item">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Name</span>
+        <input type="text" class="form-control" ng-model="submission.name" placeholder="optional" aria-describedby="basic-addon1">
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Description</span>
+        <textarea type="text" class="form-control" rows="5" ng-model="submission.description" placeholder="description" aria-describedby="basic-addon1"></textarea>
+      </div><br>
+    </li>
+  </ul>
+
+  <ul class="list-group" ng-if="!manysub && selectedgame == 'none'">
+    <li class="list-group-item">Describe your game.</li>
+    <li class="list-group-item">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Name</span>
+        <input type="text" class="form-control" ng-model="submission.name" placeholder="Giblets" aria-describedby="basic-addon1">
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Description</span>
+        <textarea type="text" class="form-control" rows="5" ng-model="submission.description" placeholder="This game is played with four people with swords. Each player attempts to gain control of all four swords. The swords can be of any type." aria-describedby="basic-addon1"></textarea>
+      </div><br>
+      Please describe any variants of the game, including the names of the variants if they exist.
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Variants</span>
+        <textarea type="text" class="form-control" rows="3" ng-model="submission.variants" placeholder="Gander's Folly - The swords are replaced with live geese." aria-describedby="basic-addon1"></textarea>
+      </div>
+    </li>
+    <li class="list-group-item">
+      Please list any other names you know of for this game.
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Alt. Names</span>
+        <input type="text" class="form-control" ng-model="submission.altnames" placeholder="Swords-gets, Hammer toss, Lady P's Excellent Game" aria-describedby="basic-addon1"></input>
+      </div><br>
+      Please select any existing games in iProv that are related to this game.
+        <div style="height:30vh;overflow-y:auto;">
+         <table class="table table-striped">
+            <tbody>
+              <tr ng-repeat="game in games">
+                <td style="cursor:pointer;" ng-style="activeTable(game)" ng-click="toggleRel(game)">{{game.name}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <ul class="list-group" style="margin-top:0.8em;" ng-if="recentrel">
+          <li class="list-group-item">
+            {{recentrel.name}}:<br>
+            {{recentrel.description}}
+          </li>
+        </ul>
+    </li>
+    <li class="list-group-item">
+      Most entries are tagged as either shortform or longform. Which is this?
+      <ul class="nav nav-pills" style="margin-top:0.2em;">
+        <li ng-class="{active:submission.lengthtag == 'shortform'}" ng-click="submission.lengthtag = 'shortform'"><a style="border:1px solid #dddddd">Shortform</a></li>
+        <li ng-class="{active:submission.lengthtag == 'longform'}" ng-click="submission.lengthtag = 'longform'"><a style="border:1px solid #dddddd">Longform</a></li>
+      </ul>
+    </li>
+    <li class="list-group-item">
+      Most entries are tagged as either scenes or games. Which better represents this?
+      <ul class="nav nav-pills" style="margin-top:0.2em;">
+        <li ng-class="{active:submission.typetag == 'scene'}" ng-click="submission.typetag = 'scene'"><a style="border:1px solid #dddddd">Scene</a></li>
+        <li ng-class="{active:submission.typetag == 'game'}" ng-click="submission.typetag = 'game'"><a style="border:1px solid #dddddd">Game</a></li>
+      </ul>
+      <sub><b>Hint:</b> most scenes are games and vice-versa, but in the database "games" are distinguised by having limited, inconsequential, or canned narrative.</sub>
+    </li>
+    <li class="list-group-item">
+      What tags apply to this game?
+      <div style="height:30vh;overflow-y:auto;">
+       <table class="table table-striped">
+          <tbody>
+            <tr ng-repeat="tag in taglist">
+              <td style="cursor:pointer;" ng-style="activeTag(tag)" ng-click="toggleTag(tag)">{{tag}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </li>
+    <li class="list-group-item">
+      Any notes for the editor? (These will not appear as part of the game)
+      <textarea type="text" class="form-control" rows="3" ng-model="submission.notes" placeholder="This game was my grandfather's game; he passed it to me as I pass it to you" aria-describedby="basic-addon1"></textarea>
+    </li>
+  </ul>
+  <ul class="list-group" ng-if="!submission.isvariant || (selectedgame && selectedgame != 'none') ">
+    <li class="list-group-item">
+      How would you like to be credited for your submission? (leave blank for anonymous)
+      <input type="text" class="form-control" ng-model="submission.notes" placeholder="Jane Smith" aria-describedby="basic-addon1"></textarea>
+    </li>
+    <li class="list-group-item">
+      <button class="btn btn-lg btn-primary">Submit</button>
+    </li>
+  </ul>
+</div>

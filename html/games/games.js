@@ -45,6 +45,7 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
   $scope.randomGame = function() {
     $scope.chosengame = $scope.games[Math.floor(Math.random() * ($scope.games.length))];
     $scope.cleanupGame();
+    $scope.addCookie($scope.chosengame.name,"History")
   }
 
 
@@ -117,7 +118,7 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     } else {
       hist = []
     }
-    while (hist.length >= 24) {
+    while (hist.length >= 49) {
       hist.pop()
     }
     if (hist.indexOf(game) == -1) {

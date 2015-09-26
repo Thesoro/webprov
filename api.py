@@ -46,9 +46,16 @@ class GetTitle(webapp2.RequestHandler):
     out = {'def':d[1], 'word':d[0]}
     self.response.write(json.dumps(out))
 
+class ContactEmail(webapp2.RequestHandler):
+    def post(self,type):
+        logging.info('ok')
+
+
 application = webapp2.WSGIApplication( [
   ("/api/game/(.*)", GameList),
   ("/api/word/title", GetTitle),
   ("/api/word/(.*)", GetWord),
+  ("/api/email/(.*)", ContactEmail),
+
 
 ], debug=True)

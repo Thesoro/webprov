@@ -81,6 +81,9 @@ a {
   background-color:#ddddff;
 }
 
+.table.submitter > tbody > tr > td.active > {
+  background-color: #337ab7;
+}
 .list-group-item {
     background-color: #ecfaff;
     /* IE9, iOS 3.2+ */
@@ -98,4 +101,14 @@ a {
     .list-group-item {
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffffff",endColorstr="#ffd9f5ff",GradientType=0);
     }
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
