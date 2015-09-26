@@ -14,14 +14,18 @@ angular.module('myApp.movie', ['ngRoute'])
   ,function($scope,$http,$location,$log) {
 
   $scope.getMovie = function() {
-    $http.get("https://api.themoviedb.org/3/movie/latest?api_key=fd1342f8e75b4a2e8a1b621e4d3620e0").success(function (response) {
-      var max = response.id
-      var queryid = Math.floor(Math.random() * max)
-      $http.get("https://api.themoviedb.org/3/movie/"+queryid+"?api_key=fd1342f8e75b4a2e8a1b621e4d3620e0").success(function (re) {
-        $scope.movie = re
-      }).error(function(re) {
+    var num = Math.floor(Math.random() * 400)
+    $http.get("http://api.themoviedb.org/3/discover/movie?vote_count.gte=200&page="+num+"&api_key=fd1342f8e75b4a2e8a1b621e4d3620e0").success(function (response) {
+      var x = Math.floor(Math.random() * 20)
+      $scope.movie = response.results[x]
+      $log.info($scope.movie)
+      $log.info(response.results)
+      $log.info(x)
+      if (!$scope.movie) {
         $scope.getMovie();
-      })
+      }
+    }).error(function(re) {
+      $scope.getMovie();
     })
   }
 

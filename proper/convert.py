@@ -15,8 +15,9 @@ for plz in files:
 
     z = line.split(',')
     p = z[0]
-    if len(z) > 1 and "_" in z[1]:
-      p = z[1]
+    for n in [1]:
+      if len(z) > n and "_" in z[n]:
+        p = z[1]
     p = p.replace(' ','')
     p = p.replace('_', ' ')
     nums = '0123456789'
