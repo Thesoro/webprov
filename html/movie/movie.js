@@ -25,6 +25,14 @@ angular.module('myApp.movie', ['ngRoute'])
     })
   }
 
+  $scope.ovrView = function() {
+    if ($scope.showoverview) {
+      return "glyphicon-minus"
+    } else {
+      return "glyphicon-plus"
+    }
+  }
+
   var initPage = function() {
     $scope.showoverview = false
     $scope.getMovie();
