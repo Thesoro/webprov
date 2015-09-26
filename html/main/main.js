@@ -23,7 +23,7 @@ angular.module('myApp.main', ['ngRoute'])
                         {name:"Noun", glyph:"", letter:"n.", link:"word/noun"},
                         {name:"Verb", glyph:"", letter:"v.", link:"word/verb"},
                         {name:"Adjective", glyph:"", letter:"a.", link:"word/adj"},
-                        {name:"Title", glyph:"", letter:"M.", link:""},
+                        {name:"Title", glyph:"", letter:"M.", link:"word/title"},
                         {name:"Two-too-to", glyph:"", letter:"T.t.t", link:"word/ttt"},
                         {name:"Movies", glyph:"film", link:"movie"},
                      ]

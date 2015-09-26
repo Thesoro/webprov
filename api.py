@@ -26,7 +26,6 @@ class GetWord(webapp2.RequestHandler):
     r = {'adj':[30,18185], 'noun':[30,82144], 'verb':[30,13796], 'adv':[30,3650]}
     x = open("data."+wordtype)
     z = x.readlines()
-    logging.info(wordtype)
     index = random.randint(r[wordtype][0], r[wordtype][1])
     line = z[index]
     d = line.split('|')
@@ -35,13 +34,21 @@ class GetWord(webapp2.RequestHandler):
     word = word.replace('_',' ')
     out = {'def':definition, 'word':word}
 
-
-
     self.response.write(json.dumps(out))
 
+class GetTitle(webapp2.RequestHandler):
+  def get(self):
+    x = open('out.txt')
+    z = x.readlines()
+    index = random.randint(0,5846)
+    line = z[index]
+    d = line.split('|')
+    out = {'def':d[1], 'word':d[0]}
+    self.response.write(json.dumps(out))
 
 application = webapp2.WSGIApplication( [
   ("/api/game/(.*)", GameList),
+  ("/api/word/title", GetTitle),
   ("/api/word/(.*)", GetWord),
 
 ], debug=True)

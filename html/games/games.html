@@ -4,13 +4,13 @@
     <ul class="list-group">
       <li class="list-group-item"><h4>
         {{chosengame.name}}
-        <button class="btn btn-xs btn-info" ng-if="favorites.indexOf(chosengame.name) == -1" ng-click="addCookie(chosengame.name, 'Favorites')" >
+        <button class="btn btn-sm btn-info" ng-if="favorites.indexOf(chosengame.name) == -1" ng-click="addCookie(chosengame.name, 'Favorites')" >
           <i class="glyphicon glyphicon-star-empty" ></i>
         </button>
-        <button class="btn btn-xs btn-info" ng-hide="favorites.indexOf(chosengame.name) == -1" ng-click="removeFav(chosengame.name)" >
+        <button class="btn btn-sm btn-info" ng-hide="favorites.indexOf(chosengame.name) == -1" ng-click="removeFav(chosengame.name)" >
           <i style="color:#ffff00;" class="glyphicon glyphicon-star"></i>
         </button>
-
+        <button style="margin-left:0.2em;" class="btn btn-primary btn-sm" ng-click="randomGame()"><i class="glyphicon glyphicon-refresh"></i></button>
       </h4></li>
       <li class="list-group-item">{{chosengame.description}}</li>
     </ul>

@@ -28,6 +28,11 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     return thing
   }
 
+  $scope.randomGame = function() {
+    $scope.chosengame = $scope.games[Math.floor(Math.random() * ($scope.games.length))];
+    $scope.cleanupGame();
+  }
+
 
   $scope.filterByTags = function(item) {
     var out = false
@@ -160,6 +165,24 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     delete $scope.chosentags[key]
     $scope.getTags()
   }
+
+  $scope.cleanupGame = function() {
+    var v = $scope.chosengame.variations
+    // $log.info(v['variant'][0].length)
+    //to check if our 'variant' object is a string or an array, we check the length of the first index
+    //undefined means it's a list of @name/#text objects, so we rearrange in that case too
+    if (v && (v['variant'][0].length > 1 || v['variant'][0].length === undefined)) {
+      $scope.chosengame.variations = v['variant']
+    }
+    //if it only has one tag, angular tries to iterate through the string. we stop it here.
+    $scope.chosengame.tags.tag = $scope.stringtoArr($scope.chosengame.tags.tag)
+    if ($scope.chosengame.aliases){
+      $scope.chosengame.aliases.alias = $scope.stringtoArr($scope.chosengame.aliases.alias)
+    }
+    if ($scope.chosengame.relations){
+      $scope.chosengame.relations.relation = $scope.stringtoArr($scope.chosengame.relations.relation)
+    }
+  }
   var initPage = function() {
     $scope.taglist = {}
     $scope.chosentags = {}
@@ -175,7 +198,8 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
           if ($routeParams.entityid) {
             $scope.view = 'game'
             if ($routeParams.entityid == "random") {
-              $scope.chosengame = $scope.games[Math.floor(Math.random() * ($scope.games.length))];
+              $scope.chosengame = true
+              $scope.randomGame();
             } else if ($routeParams.entityid == "tags") {
               $scope.getTags();
               $scope.view = 'tags'
@@ -193,21 +217,7 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
             }
 
             if ($scope.chosengame) {
-              var v = $scope.chosengame.variations
-              // $log.info(v['variant'][0].length)
-              //to check if our 'variant' object is a string or an array, we check the length of the first index
-              //undefined means it's a list of @name/#text objects, so we rearrange in that case too
-              if (v && (v['variant'][0].length > 1 || v['variant'][0].length === undefined)) {
-                $scope.chosengame.variations = v['variant']
-              }
-              //if it only has one tag, angular tries to iterate through the string. we stop it here.
-              $scope.chosengame.tags.tag = $scope.stringtoArr($scope.chosengame.tags.tag)
-              if ($scope.chosengame.aliases){
-                $scope.chosengame.aliases.alias = $scope.stringtoArr($scope.chosengame.aliases.alias)
-              }
-              if ($scope.chosengame.relations){
-                $scope.chosengame.relations.relation = $scope.stringtoArr($scope.chosengame.relations.relation)
-              }
+              $scope.cleanupGame();
             }
           } else {
             $scope.view = 'all'

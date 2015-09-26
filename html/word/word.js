@@ -14,7 +14,17 @@ angular.module('myApp.word', ['ngRoute'])
 
   $scope.wordlist = {}
   $scope.wordtype = ''
+  $scope.w = {}
 
+  $scope.randomWord = function() {
+    $scope.getWord();
+  }
+
+  $scope.getWord = function() {
+   $http.get("/api/word/"+$routeParams.entityid).success(function (response) {
+        $scope.w = response
+    })
+  }
   var initPage = function() {
     $scope.wordtype = $routeParams.entityid
     if ($scope.wordtype == "ttt") {
@@ -29,10 +39,8 @@ angular.module('myApp.word', ['ngRoute'])
       $http.get("/api/word/verb").success(function (res) {
         $scope.wordlist['verb'] = res
       })
-    } else if (['adj','adv','noun','verb'].indexOf($scope.wordtype != -1)) {
-      $http.get("/api/word/"+$routeParams.entityid).success(function (response) {
-        $scope.w = response
-      })
+    } else if (['adj','adv','noun','verb','title'].indexOf($scope.wordtype != -1)) {
+      $scope.getWord()
     }
   }
   initPage();
