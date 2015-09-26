@@ -14,7 +14,7 @@ angular.module('myApp.movie', ['ngRoute'])
   ,function($scope,$http,$location,$log) {
 
   $scope.getMovie = function() {
-    var num = Math.floor(Math.random() * 400)
+    var num = Math.floor(Math.random() * 300)
     $http.get("http://api.themoviedb.org/3/discover/movie?vote_count.gte=200&page="+num+"&api_key=fd1342f8e75b4a2e8a1b621e4d3620e0").success(function (response) {
       var x = Math.floor(Math.random() * 20)
       $scope.movie = response.results[x]
