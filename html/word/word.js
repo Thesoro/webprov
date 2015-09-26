@@ -21,12 +21,6 @@ angular.module('myApp.word', ['ngRoute'])
   }
 
   $scope.getWord = function() {
-   $http.get("/api/word/"+$routeParams.entityid).success(function (response) {
-        $scope.w = response
-    })
-  }
-  var initPage = function() {
-    $scope.wordtype = $routeParams.entityid
     if ($scope.wordtype == "ttt") {
       var a = ['noun', 'adj', 'verb']
       $scope.wordlist = {}
@@ -40,8 +34,14 @@ angular.module('myApp.word', ['ngRoute'])
         $scope.wordlist['verb'] = res
       })
     } else if (['adj','adv','noun','verb','title'].indexOf($scope.wordtype != -1)) {
-      $scope.getWord()
+      $http.get("/api/word/"+$routeParams.entityid).success(function (response) {
+        $scope.w = response
+      })
     }
+  }
+  var initPage = function() {
+    $scope.wordtype = $routeParams.entityid
+    $scope.getWord()
   }
   initPage();
 

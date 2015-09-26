@@ -7,7 +7,8 @@ angular.module('myApp', [
   'myApp.games',
   'myApp.version',
   'myApp.word',
-  'myApp.movie'
+  'myApp.movie',
+  'myApp.other',
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -15,6 +16,11 @@ config(['$routeProvider', function($routeProvider) {
     controller: "mainCtrl",
     title: "main",
     templateUrl: "/html/main/main.html"
+  })
+  .when("/other/:entityid?", {
+    controller: "otherCtrl",
+    title: "other",
+    templateUrl: "/html/other/other.html"
   })
   .when("/games/:entityid?", {
     controller: "gamesCtrl",

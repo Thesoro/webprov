@@ -12,12 +12,26 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
 .controller('gamesCtrl', ['$scope','$http','$routeParams','$log','$location','$cookies',
   function($scope,$http,$routeParams,$log,$location,$cookies) {
 
+  $scope.tagButton = function(tag) {
+    $scope.view = 'tags'
+    $scope.addTag(tag);
+  }
+  $scope.getStyle = function(index) {
+
+    var x = ((index+1)%$scope.style.length)-1
+    if (x == -1) { x = $scope.style.length-1}
+    x = $scope.style[x]
+    return x
+  }
   $scope.chooseGame = function(name) {
     $location.url("/games/"+name);
   }
+
   $scope.searchbar = ''
   $scope.chosentags = {}
   $scope.history = []
+
+
 //turns strings into arrays, keeps arrays as they are
   $scope.stringtoArr = function(thing) {
     if (thing[0].length == 1) {
@@ -122,7 +136,6 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     var expireDate = new Date();
     expireDate.setYear(expireDate.getFullYear() + 1);
     $cookies.put('webProv'+type, string, {'expires': expireDate});
-    $log.info(string)
   }
 
   $scope.removeFav = function(game) {
@@ -166,6 +179,16 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     $scope.getTags()
   }
 
+  $scope.shuffleArray = function(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+  }
+
   $scope.cleanupGame = function() {
     var v = $scope.chosengame.variations
     // $log.info(v['variant'][0].length)
@@ -191,6 +214,8 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     $scope.view = false
     $scope.getHistory();
     $scope.getFavorites();
+    $scope.style = ["btn-primary", "btn-info","btn-success","btn-warning","btn-danger"]
+    $scope.shuffleArray($scope.style)
 
     if (!$scope.games) {
       $http.get("/api/game/all").success(function (response) {

@@ -39,7 +39,7 @@
     </ul>
     <ul class="list-group" style="margin-top:0.3em;">
       <li class="list-group-item"><h6>Tags</h6></li>
-      <li class="list-group-item"><button class="btn btn-default btn-sm" style="margin-right:0.4em;margin-bottom:0.2em;" ng-repeat="tag in chosengame.tags.tag">{{tag}}</button></li>
+      <li class="list-group-item"><button class="btn btn-sm" style="margin-right:0.4em;margin-bottom:0.2em;" ng-repeat="tag in chosengame.tags.tag track by $index" ng-class="getStyle($index)" ng-click="tagButton(tag)">{{tag}}</button></li>
     </ul>
   </div>
 </div>
