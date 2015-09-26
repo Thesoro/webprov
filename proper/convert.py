@@ -14,7 +14,10 @@ for plz in files:
       line = line.replace(char,'')
 
     z = line.split(',')
-    p = z[0].replace(' ','')
+    p = z[0]
+    if len(z) > 1 and "_" in z[1]:
+      p = z[1]
+    p = p.replace(' ','')
     p = p.replace('_', ' ')
     nums = '0123456789'
     for num in nums:
