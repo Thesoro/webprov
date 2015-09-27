@@ -29,8 +29,8 @@ angular.module('myApp.main', ['ngRoute'])
                      ]
   $scope.moremenu = [
                         {name:"About", glyph:"info-sign", link:"other/about"},
-                        {name:"Submit Game", glyph:"envelope", link:""},
-                        {name:"Settings", glyph:"cog", link:""},
+                        {name:"Submit Game", glyph:"envelope", link:"other/submit"},
+                        {name:"Settings", glyph:"cog", link:"other/settings"},
                      ]
   $scope.menus = [
                   {name:"Games", 'list':$scope.gamemenu},

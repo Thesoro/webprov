@@ -2,6 +2,7 @@ import logging
 import os
 # Our basic MVC frameworks for the backend
 import webapp2
+from google.appengine.api import mail
 
 # Encode urls
 from base64 import b64encode, b64decode
@@ -47,15 +48,64 @@ class GetTitle(webapp2.RequestHandler):
     self.response.write(json.dumps(out))
 
 class ContactEmail(webapp2.RequestHandler):
-    def post(self,type):
-        logging.info('ok')
+  def post(self,type):
+    x = json.loads(self.request.body)
+    logging.info(x)
+    if not x['isvariant']:
+      if not x.has_key('name'):
+        x['name'] = 'Unknown'
+      if not x.has_key('description'):
+        x['description'] = 'Unknown'
+      body = "<item>\n    <name>"+x['name']+"</name>\n    <description>"+x['description']+"</description>\n"
+      for thing in ['variants', 'altnames', 'relatedtags']:
+        if x.has_key(thing):
+          if thing == 'variants':
+            ltag = "variations"
+            stag = "variant"
+            z = x[thing].split('\n')
+
+          elif thing == 'altnames':
+            ltag = "aliases"
+            stag = "alias"
+            z = x[thing].split('\n')
+
+          elif thing == "relatedtags":
+            ltag = "tags"
+            stag = "tag"
+            z = x[thing].keys()
+
+          body += "    <"+ltag+">\n"
+          for v in z:
+            body += ("        <"+stag+">"+v+"</"+stag+">\n")
+          body += "    </"+ltag+">\n"
+      body += "</item>"
+
+    elif x['isvariant']:
+      body = "<variations>\n"
+      if x.has_key('variants'):
+        d = x['variants'].split('\n')
+        for i in d:
+          body += ("    <variant>"+i+"</variant>\n")
+        body += "</variations>"
+
+    for o in ['author', 'notes']:
+      if x.has_key(o):
+        body += "\n\n"+o+": "+x[o]
+
+    message = mail.EmailMessage(sender='rob.whitehead@gmail.com',subject='webProv game submission')
+    message.to = 'rob.whitehead@gmail.com'
+    message.body = body
+    message.send()
+    logging.info(body)
+
+
 
 
 application = webapp2.WSGIApplication( [
   ("/api/game/(.*)", GameList),
   ("/api/word/title", GetTitle),
   ("/api/word/(.*)", GetWord),
-  ("/api/email/(.*)", ContactEmail),
+  ("/api/submit/(.*)", ContactEmail),
 
 
 ], debug=True)

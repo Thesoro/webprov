@@ -108,16 +108,16 @@
           </table>
         </div>
 
-        <ul class="list-group" style="margin-top:0.8em;" ng-if="selectedgame && selectedgame != 'none'">
+        <ul class="list-group" style="margin-top:0.8em;" ng-if="submission.selectedgame && submission.selectedgame != 'none'">
           <li class="list-group-item">
-            {{selectedgame.description}}
+            {{submission.selectedgame.description}}
           </li>
         </ul>
       </div>
     </li>
   </ul>
 
-  <ul class="list-group" ng-if="!manysub && submission.isvariant && selectedgame && selectedgame != 'none'">
+  <ul class="list-group" ng-if="!manysub && submission.isvariant && submission.selectedgame && submission.selectedgame != 'none'">
     <li class="list-group-item">Describe your variant.</li>
     <li class="list-group-item">
       <div class="input-group">
@@ -133,7 +133,7 @@
     </li>
   </ul>
 
-  <ul class="list-group" ng-if="!manysub && selectedgame == 'none'">
+  <ul class="list-group" ng-if="!manysub && submission.selectedgame == 'none'">
     <li class="list-group-item">Describe your game.</li>
     <li class="list-group-item">
       <div class="input-group">
@@ -209,13 +209,13 @@
       <textarea type="text" class="form-control" rows="3" ng-model="submission.notes" placeholder="This game was my grandfather's game; he passed it to me as I pass it to you" aria-describedby="basic-addon1"></textarea>
     </li>
   </ul>
-  <ul class="list-group" ng-if="!submission.isvariant || (selectedgame && selectedgame != 'none') ">
+  <ul class="list-group" ng-if="!submission.isvariant || (submission.selectedgame && submission.selectedgame != 'none') ">
     <li class="list-group-item">
       How would you like to be credited for your submission? (leave blank for anonymous)
-      <input type="text" class="form-control" ng-model="submission.notes" placeholder="Jane Smith" aria-describedby="basic-addon1"></textarea>
+      <input type="text" class="form-control" ng-model="submission.author" placeholder="Jane Smith" aria-describedby="basic-addon1"></textarea>
     </li>
     <li class="list-group-item">
-      <button class="btn btn-lg btn-primary">Submit</button>
+      <button class="btn btn-lg btn-primary" ng-click="submitGame(submission)">Submit</button>
     </li>
   </ul>
 </div>

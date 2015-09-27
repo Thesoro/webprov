@@ -5,16 +5,7 @@ angular.module('myApp.other', ['ngRoute'])
 
 .controller('otherCtrl', ['$scope','$http','$location','$log','$routeParams','$cookies'
   ,function($scope,$http,$location,$log,$routeParams,$cookies) {
-  $scope.view = ''
-  $scope.manysub = false
-  $scope.games = false
-  $scope.selectedgame = null
-  $scope.isvariant = true
-  $scope.submission = {'isvariant':true}
-  $scope.relatedgames = {}
-  $scope.recentrel = false
-  $scope.taglist = {}
-  $scope.relatedtags = {}
+
 
   $scope.delCookie = function(kind) {
     $cookies.remove('webProv'+kind);
@@ -25,7 +16,7 @@ angular.module('myApp.other', ['ngRoute'])
     $scope.view = view
   }
   $scope.selectGame = function(game) {
-    $scope.selectedgame = game
+    $scope.submission.selectedgame = game
   }
   $scope.getGames = function() {
     $http.get("/api/game/all").success(function (response) {
@@ -55,23 +46,23 @@ angular.module('myApp.other', ['ngRoute'])
 
 
   $scope.toggleRel = function(game) {
-    if ($scope.relatedgames[game.name]) {
-      $scope.relatedgames[game.name] = false
+    if ($scope.submission.relatedgames[game.name]) {
+      $scope.submission.relatedgames[game.name] = false
     } else {
-      $scope.relatedgames[game.name] = true
+      $scope.submission.relatedgames[game.name] = true
       $scope.recentrel = game
     }
   }
 
   $scope.activeTable = function(game) {
-    if (game == $scope.selectedgame || ($scope.selectedgame == 'none' && $scope.relatedgames[game.name])) {
+    if (game == $scope.submission.selectedgame || ($scope.submission.selectedgame == 'none' && $scope.submission.relatedgames[game.name])) {
       return {'color':'#ffffff','background-color':'#337ab7'}
     } else {
       return {}
     }
   }
   $scope.activeTag = function(tag) {
-    if ($scope.relatedtags[tag]) {
+    if ($scope.submission.relatedtags[tag]) {
       return {'color':'#ffffff','background-color':'#337ab7'}
     } else {
       return {}
@@ -79,18 +70,36 @@ angular.module('myApp.other', ['ngRoute'])
   }
 
   $scope.toggleTag = function(tag) {
-    if ($scope.relatedtags[tag]) {
-      $scope.relatedtags[tag] = false
+    if ($scope.submission.relatedtags[tag]) {
+      $scope.submission.relatedtags[tag] = false
     } else {
-      $scope.relatedtags[tag] = true
+      $scope.submission.relatedtags[tag] = true
     }
   }
 
   $scope.submitGame = function(sub) {
+    $log.info(sub)
+    var ltag = $scope.submission.lengthtag
+    var ttag = $scope.submission.typetag
+    if (ltag) { $scope.submission.relatedtags[ltag] = true}
+    if (ttag) { $scope.submission.relatedtags[ttag] = true}
 
+    $scope.submission.selectedgame = $scope.submission.selectedgame.name
+    $http.post("/api/submit/",sub)
+    initPage();
   }
 
   var initPage = function() {
+    $scope.submission = {'isvariant':true}
+    $scope.view = ''
+    $scope.manysub = false
+    $scope.games = false
+    $scope.isvariant = true
+    $scope.submission.selectedgame = null
+    $scope.submission.relatedgames = {}
+    $scope.recentrel = false
+    $scope.taglist = {}
+    $scope.submission.relatedtags = {}
     $scope.view = $routeParams.entityid
     $scope.delhist = false
     $scope.delfavs = false
