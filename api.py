@@ -41,7 +41,7 @@ class GetTitle(webapp2.RequestHandler):
   def get(self):
     x = open('out.txt')
     z = x.readlines()
-    index = random.randint(0,5846)
+    index = random.randint(0,5595)
     line = z[index]
     d = line.split('|')
     out = {'def':d[1], 'word':d[0]}

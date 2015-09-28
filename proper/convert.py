@@ -10,13 +10,15 @@ for plz in files:
 
 
   for line in x:
+    if 'a deity' in line:
+      continue
     for char in chars:
       line = line.replace(char,'')
 
     z = line.split(',')
     p = z[0]
     for n in [1]:
-      if len(z) > n and "_" in z[n]:
+      if len(z) > n and "_" in z[n] and 'deity' not in z[1]:
         p = z[1]
     p = p.replace(' ','')
     p = p.replace('_', ' ')

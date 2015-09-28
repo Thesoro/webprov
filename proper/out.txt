@@ -711,7 +711,7 @@ Chimera|(Greek mythology) fire-breathing female monster with a lion's head and a
 Chiron|(Greek mythology) the learned centaur who tutored Achilles, Asclepius, Hercules, Jason, and other heroes
 Circe|(Greek mythology) a sorceress who detained Odysseus on her island and turned his men into swine
 Fafnir|(Norse mythology) the Norse dragon that guarded a treasure and was slain by Sigurd
-Greek deity|(Greek mythology) one of three sisters who were the givers of beauty and charm; a favorite subject for sculptors
+Grace|(Greek mythology) one of three sisters who were the givers of beauty and charm; a favorite subject for sculptors
 Aglaia|(Greek mythology) one of the three Graces
 Euphrosyne|(Greek mythology) one of the three Graces
 Thalia|(Greek mythology) one of the three Graces
@@ -726,157 +726,152 @@ Fury|(classical mythology) the hideous snake-haired monsters (usually three in n
 Alecto|one of the three Furies
 Megaera|one of the three Furies
 Tisiphone|one of the three Furies
-Celtic deity|a deity worshipped by the Celts
-Celtic deity|the farmer god; ancient god of agriculture
-Celtic deity|mother of the ancient Irish gods; sometimes identified with Danu
+Amaethon|the farmer god; ancient god of agriculture
+Ana|mother of the ancient Irish gods; sometimes identified with Danu
 Angus Og|Celtic god of love and beauty; patron deity of young men and women
-Celtic deity|Celtic deity who was the lord of Annwfn (the other world or the land of fairies)
+Arawn|Celtic deity who was the lord of Annwfn (the other world or the land of fairies)
 Arianrhod|Celtic goddess famous for her beauty; mother of Dylan
-Celtic deity|Celtic goddess; mother of Angus Og
-Celtic deity|Celtic goddess of fire and fertility and agriculture and household arts and wisdom; later associated with Saint Bridget
-Celtic deity|chief Celtic god of the Tuatha De Danann; father of Angus Og and Brigit
+Boann|Celtic goddess; mother of Angus Og
+Brigit|Celtic goddess of fire and fertility and agriculture and household arts and wisdom; later associated with Saint Bridget
+Dagda|chief Celtic god of the Tuatha De Danann; father of Angus Og and Brigit
 Danu|Celtic goddess who was the mother of the Tuatha De Danann; identified with the Welsh Don
-Celtic deity|Celtic goddess; mother of Gwydion and Arianrhod; corresponds to Irish Danu
-Celtic deity|Celtic god of the waves; son of Arianrhod
-Celtic deity|(possibly Roman mythology) Celtic goddess of horses and mules and asses
+Don|Celtic goddess; mother of Gwydion and Arianrhod; corresponds to Irish Danu
+Dylan|Celtic god of the waves; son of Arianrhod
+Epona|(possibly Roman mythology) Celtic goddess of horses and mules and asses
 Fomor|one of a group of Celtic sea demons sometimes associated with the hostile power of nature
-Celtic deity|Celtic sky god; a magician; giver of arts and civilization
-Celtic deity|Celtic underworld god
+Gwydion|Celtic sky god; a magician; giver of arts and civilization
+Gwyn|Celtic underworld god
 Lir|the sea personified; father of Manannan; corresponds to Welsh Llyr
-Celtic deity|son of Gwydion and Arianrhod; supported by magic of Gwydion; cursed by Arianrhod
-Celtic deity|a Celtic warrior god
-Celtic deity|Celtic deity who was the father of Manawydan; corresponds to Irish Lir
+Llew Llaw Gyffes|son of Gwydion and Arianrhod; supported by magic of Gwydion; cursed by Arianrhod
+LLud|a Celtic warrior god
+Llyr|Celtic deity who was the father of Manawydan; corresponds to Irish Lir
 Lug|ancient Celtic god
-Celtic deity|Celtic god of the sea; son of Ler
+Manannan|Celtic god of the sea; son of Ler
 Manawydan|Celtic sea god; son of Llyr
 Morrigan|Celtic war goddess
 Tuatha De|group of Celtic gods or demigods; ruled Ireland in the Golden Age
-Egyptian deity|a deity worshipped by the ancient Egyptians
 Amen|a primeval Egyptian personification of air and breath; worshipped especially at Thebes
 Amen-Ra|Egyptian sun god; supreme god of the universe in whom Amen and Ra were merged; principal deity during Theban supremacy
 Anubis|Egyptian god of tombs and ruler of the underworld; usually depicted as a man with the head of a jackal
 Aten|the sun (or solar disc) which was the deity of a monotheistic cult under the Pharaoh Akhenaten
-Egyptian deity|cat- or lion-headed Egyptian goddess; represents life-giving power of the sun
+Bast|cat- or lion-headed Egyptian goddess; represents life-giving power of the sun
 Geb|Egyptian god of the earth; father of Osiris and Isis
-Egyptian deity|Egyptian solar god with the head of a falcon; the son of Osiris and Isis
-Egyptian deity|Egyptian goddess of fertility; daughter of Geb; sister and wife of Osiris
-Egyptian deity|Egyptian god of the morning sun; creator
-Egyptian deity|an Egyptian god of procreation
-Egyptian deity|Egyptian goddess associated with ritual of the dead; sister of Geb and Nut; wife of Set
-Egyptian deity|Egyptian goddess of the sky
-Egyptian deity|Egyptian god of the underworld and judge of the dead; husband and brother of Isis; father of Horus
-Egyptian deity|a major Egyptian god; shaper of the world; father of gods and men; worshipped especially at Memphis
+Horus|Egyptian solar god with the head of a falcon; the son of Osiris and Isis
+Isis|Egyptian goddess of fertility; daughter of Geb; sister and wife of Osiris
+Khepera|Egyptian god of the morning sun; creator
+Min|an Egyptian god of procreation
+Nephthys|Egyptian goddess associated with ritual of the dead; sister of Geb and Nut; wife of Set
+Nut|Egyptian goddess of the sky
+Osiris|Egyptian god of the underworld and judge of the dead; husband and brother of Isis; father of Horus
+Ptah|a major Egyptian god; shaper of the world; father of gods and men; worshipped especially at Memphis
 Ra|ancient Egyptian sun god with the head of a hawk; a universal creator; he merged with the god Amen as Amen-Ra to become the king of the gods
 Eye of Ra|a lion-headed Egyptian goddess; typifies life-destroying power of the sun
 Set|evil Egyptian god with the head of a beast that has high square ears and a long snout; brother and murderer of Osiris
-Egyptian deity|Egyptian Moon deity with the head of an ibis; god of wisdom and learning and the arts; scribe of the gods
-Semitic deity|a deity worshipped by the ancient Semites
-Semitic deity|Babylonian god of storms and wind
-Semitic deity|a Babylonian demigod or first man (sometimes identified with Adam)
-Semitic deity|the Babylonian father of the gods; identified with Assyrian Ashur; in Sumerian the name signifies `the totality of the upper world'
-Semitic deity|Babylonian consort of Anu
-Semitic deity|Babylonian god of the sky; one of the supreme triad including Bel and Ea
+Thoth|Egyptian Moon deity with the head of an ibis; god of wisdom and learning and the arts; scribe of the gods
+Adad|Babylonian god of storms and wind
+Adapa|a Babylonian demigod or first man (sometimes identified with Adam)
+Anshar|the Babylonian father of the gods; identified with Assyrian Ashur; in Sumerian the name signifies `the totality of the upper world'
+Antum|Babylonian consort of Anu
+Anu|Babylonian god of the sky; one of the supreme triad including Bel and Ea
 Anunnaki|any of a group of powerful Babylonian earth spirits or genii; servitors of the gods
-Semitic deity|father of the gods and consort of Tiamat
-Semitic deity|mother and earth goddess in Gilgamish epic; identified with Sumerian Ki and Ninkhursag
+Apsu|father of the gods and consort of Tiamat
+Aruru|mother and earth goddess in Gilgamish epic; identified with Sumerian Ki and Ninkhursag
 Ashur|chief god of the Assyrians; god of military prowess and empire; identified with Babylonian Anshar
 Astarte|an ancient Phoenician goddess of love and fertility; the Phoenician counterpart to Ishtar
 Ishtar|Babylonian and Assyrian goddess of love and fertility and war; counterpart to the Phoenician Astarte
-Semitic deity|any of numerous local fertility and nature deities worshipped by ancient Semitic peoples; the Hebrews considered Baal a false god
-Semitic deity|Babylonian god of the earth; one of the supreme triad including Anu and Ea; earlier identified with En-lil
-Semitic deity|god of agriculture and the earth; national god of Philistines
-Semitic deity|god of agriculture and earth; counterpart of Phoenician Dagon
+Baal|any of numerous local fertility and nature deities worshipped by ancient Semitic peoples; the Hebrews considered Baal a false god
+Bel|Babylonian god of the earth; one of the supreme triad including Anu and Ea; earlier identified with En-lil
+Dagon|god of agriculture and the earth; national god of Philistines
+Dagan|god of agriculture and earth; counterpart of Phoenician Dagon
 Damkina|(Babylonian) earth goddess; consort of Ea and mother of Marduk
 Dumuzi|Sumerian and Babylonian god of pastures and vegetation; consort of Inanna
-Semitic deity|the Babylonian god of wisdom; son of Apsu and father of Marduk; counterpart of the Sumerian Enki; as one of the supreme triad including Anu and Bel he was assigned control of the watery element
-Semitic deity|water god and god of wisdom; counterpart of the Akkadian Ea
+Ea|the Babylonian god of wisdom; son of Apsu and father of Marduk; counterpart of the Sumerian Enki; as one of the supreme triad including Anu and Bel he was assigned control of the watery element
+Enki|water god and god of wisdom; counterpart of the Akkadian Ea
 Enlil|god of the air and king of the Sumerian gods
 Ereshkigal|goddess of death and consort of Nergal
-Semitic deity|the Babylonian god of fire; often invoked in incantations against sorcery
-Semitic deity|the Babylonian goddess of healing and consort of Ninurta
-Semitic deity|any of a group of heavenly spirits under the god Anu
-Semitic deity|consort of Dumuzi (Tammuz)
-Semitic deity|goddess personifying earth; counterpart of Akkadian Aruru
-Semitic deity|Babylonian consort of Anshar; in Sumerian the name signifies `the totality of the lower world'
-Semitic deity|in ancient Semitic folklore: a female demon who attacks children
-Semitic deity|a name under which Ninkhursag was worshipped
+Girru|the Babylonian god of fire; often invoked in incantations against sorcery
+Gula|the Babylonian goddess of healing and consort of Ninurta
+Igigi|any of a group of heavenly spirits under the god Anu
+Inanna|consort of Dumuzi (Tammuz)
+Ki|goddess personifying earth; counterpart of Akkadian Aruru
+Kishar|Babylonian consort of Anshar; in Sumerian the name signifies `the totality of the lower world'
+Lilith|in ancient Semitic folklore: a female demon who attacks children
+Mama|a name under which Ninkhursag was worshipped
 Marduk|the chief Babylonian god; his consort was Sarpanitu
 Moloch|god of the Canaanites and Phoenicians to whom parents sacrificed their children
 Nabu|Babylonian god of wisdom and agriculture and patron of scribes and schools
-Semitic deity|goddess personifying the primeval sea; mother of the gods and of heaven and earth
+Nammu|goddess personifying the primeval sea; mother of the gods and of heaven and earth
 Namtar|a demon personifying death; messenger of the underworld goddess Ereshkigal bringing death to mankind
-Semitic deity|god of the Moon; counterpart of the Akkadian Sin
-Semitic deity|(Akkadian) god ruling with his consort Ereshkigal the world of the dead
-Semitic deity|the Babylonian goddess of the watery deep and daughter of Ea
-Semitic deity|(Akkadian) a goddess; wife of the Moon god Sin
-Semitic deity|Babylonian god in older pantheon: god of war and agriculture
-Semitic deity|an underworld Babylonian deity; patron of medicine
+Nanna|god of the Moon; counterpart of the Akkadian Sin
+Nergal|(Akkadian) god ruling with his consort Ereshkigal the world of the dead
+Nina|the Babylonian goddess of the watery deep and daughter of Ea
+Ningal|(Akkadian) a goddess; wife of the Moon god Sin
+Ningirsu|Babylonian god in older pantheon: god of war and agriculture
+Ningishzida|an underworld Babylonian deity; patron of medicine
 Ninkhursag|the great mother goddess; worshipped also as Aruru and Mama and Nintu
 Nintu|a name under which Ninkhursag was worshipped
 Ninurta|a solar deity; firstborn of Bel and consort was Gula; god of war and the chase and agriculture; sometimes identified with biblical Nimrod
-Semitic deity|god of fire and light; corresponds to Babylonian Girru
-Semitic deity|god of storms and wind; corresponds to Babylonian Adad
+Nusku|god of fire and light; corresponds to Babylonian Girru
+Ramman|god of storms and wind; corresponds to Babylonian Adad
 Sarpanitu|consort of Marduk
-Semitic deity|the chief sun god; drives away winter and storms and brightens the earth with greenery; drives away evil and brings justice and compassion
-Semitic deity|(Akkadian) god of the Moon; counterpart of Sumerian Nanna
+Shamash|the chief sun god; drives away winter and storms and brightens the earth with greenery; drives away evil and brings justice and compassion
+Sin|(Akkadian) god of the Moon; counterpart of Sumerian Nanna
 Tashmit|consort of Nabu
-Semitic deity|(Akkadian) mother of the gods and consort of Apsu
-Semitic deity|favorite of the gods and grandfather of Gilgamish; survived the great flood and became immortal
+Tiamat|(Akkadian) mother of the gods and consort of Apsu
+Utnapishtim|favorite of the gods and grandfather of Gilgamish; survived the great flood and became immortal
 Utu|sun god; counterpart of Akkadian Shamash
 Zu|evil storm god represented as a black bird
-Hindu deity|a deity worshipped by the Hindus
-Hindu deity|a Hindu goddess who releases from sin or disease; mother of the Adityas
-Hindu deity|one of 7 to 12 sons of Aditi; Hindu gods of celestial light
-Hindu deity|(Sanskrit) Hindu god of fire in ancient and traditional India; one of the three chief deities of the Vedas
-Hindu deity|earlier a god; later a demon; counterpart of Zoroastrian Ahura
-Hindu deity|(Zoroastrianism) title for benevolent deities
-Hindu deity|(literally `possessing horses' in Sanskrit) in Hinduism the twin chariot warriors conveying Surya
-Hindu deity|Hindu god of wealth and love
-Hindu deity|the Creator; one of the three major deities in the later Hindu pantheon
-Hindu deity|personification of the power of ritual devotion
-Hindu deity|Hindu earth goddess; one of the two wives of Vishnu
-Hindu deity|Hindu mother goddess; supreme power in the universe; wife or embodiment of the female energy of Siva having both beneficent and malevolent forms or aspects
-Hindu deity|malevolent aspect of Devi; "the fierce"
-Hindu deity|basic principles of the cosmos; also: an ancient sage in Hindu mythology worshipped as a god by some lower castes
-Hindu deity|Hindu goddess of war; a malevolent aspect of Devi; "the inaccessible Durga"
+Aditi|a Hindu goddess who releases from sin or disease; mother of the Adityas
+Aditya|one of 7 to 12 sons of Aditi; Hindu gods of celestial light
+Agni|(Sanskrit) Hindu god of fire in ancient and traditional India; one of the three chief deities of the Vedas
+Asura|earlier a god; later a demon; counterpart of Zoroastrian Ahura
+Ahura|(Zoroastrianism) title for benevolent deities
+Asvins|(literally `possessing horses' in Sanskrit) in Hinduism the twin chariot warriors conveying Surya
+Bhaga|Hindu god of wealth and love
+Brahma|the Creator; one of the three major deities in the later Hindu pantheon
+Brihaspati|personification of the power of ritual devotion
+Bhumi Devi|Hindu earth goddess; one of the two wives of Vishnu
+Devi|Hindu mother goddess; supreme power in the universe; wife or embodiment of the female energy of Siva having both beneficent and malevolent forms or aspects
+Chandi|malevolent aspect of Devi; "the fierce"
+Dharma|basic principles of the cosmos; also: an ancient sage in Hindu mythology worshipped as a god by some lower castes
+Durga|Hindu goddess of war; a malevolent aspect of Devi; "the inaccessible Durga"
 Dyaus|Hindu god of the sky
 Ganesh|Hindu god of wisdom or prophecy; the god who removes obstacles
-Hindu deity|a supernatural eagle-like being that serves as Vishnu's mount
-Hindu deity|in Hinduism, goddess of purity and posterity and a benevolent aspect of Devi; the `brilliant'
-Hindu deity|in Hinduism, the monkey god and helper of Rama; god of devotion and courage
-Hindu deity|chief Hindu god of the Rig-Veda; god of rain and thunder
-Hindu deity|unknown god; an epithet of Prajapati and Brahma
-Hindu deity|wife of Siva and malevolent form of Devi; "the black"
-Hindu deity|Hindu god of love and erotic desire; opposite of Mara
-Hindu deity|Hindu god of death; opposite of Kama
+Garuda|a supernatural eagle-like being that serves as Vishnu's mount
+Gauri|in Hinduism, goddess of purity and posterity and a benevolent aspect of Devi; the `brilliant'
+Hanuman|in Hinduism, the monkey god and helper of Rama; god of devotion and courage
+Indra|chief Hindu god of the Rig-Veda; god of rain and thunder
+Ka|unknown god; an epithet of Prajapati and Brahma
+Kali|wife of Siva and malevolent form of Devi; "the black"
+Kama|Hindu god of love and erotic desire; opposite of Mara
+Mara|Hindu god of death; opposite of Kama
 Kartikeya|Hindu god of bravery
-Hindu deity|Hindu goddess of fortune and prosperity
-Hindu deity|any of a group of Hindu storm gods; offspring of Rudra
-Hindu deity|Hindu god of friendship and alliances; usually invoked together with Varuna as a supporter of heaven and earth
-Hindu deity|Hindu god of rain; sometimes identified with Indra
+Lakshmi|Hindu goddess of fortune and prosperity
+Marut|any of a group of Hindu storm gods; offspring of Rudra
+Mitra|Hindu god of friendship and alliances; usually invoked together with Varuna as a supporter of heaven and earth
+Parjanya|Hindu god of rain; sometimes identified with Indra
 Parvati|wife of Siva and a benevolent aspect of Devi: Hindu goddess of plenty
-Hindu deity|Hindu god personifying a creative force; equivalent to Brahma
+Prajapati|Hindu god personifying a creative force; equivalent to Brahma
 Praxiteles|ancient Greek sculptor (circa 370-330 BC)
-Hindu deity|celestial shepherd god; conductor of souls of the dead
-Hindu deity|a Hindu demon who swallows the sun causing eclipses
+Pushan|celestial shepherd god; conductor of souls of the dead
+Rahu|a Hindu demon who swallows the sun causing eclipses
 Ribhus|one of three artisans of the Hindu gods
-Hindu deity|father of the Hindu storm gods Marut; controller of nature; sometimes identified with Siva
-Hindu deity|Hindu goddess of learning and the arts
-Hindu deity|an important Hindu god; the sun in its life-giving aspect
+Rudra|father of the Hindu storm gods Marut; controller of nature; sometimes identified with Siva
+Sarasvati|Hindu goddess of learning and the arts
+Savitar|an important Hindu god; the sun in its life-giving aspect
 Shakti|the female or generative principle; wife of Siva and a benevolent form of Devi
 Siva|the auspicious one; a major divinity in the later Hindu pantheon
 Bairava|epithet of Siva; "the terrible Bairava"
-Hindu deity|Hindu god of war
-Hindu deity|personification of a sacred intoxicating drink used in Vedic ritual
-Hindu deity|an important god of later Hinduism; the sun god or the sun itself worshipped as the source of warmth and light
-Hindu deity|a benevolent aspect of Devi; `splendor'
-Hindu deity|Hindu goddess of dawn; daughter of the sky and sister of the night
-Hindu deity|Indra's thunderbolt
-Hindu deity|in Vedism, god of the night sky who with his thousand eyes watches over human conduct and judges good and evil and punishes evildoers; often considered king of the Hindu gods and frequently paired with Mitra as an upholder of the world
-Hindu deity|Hindu wind god
-Hindu deity|the sustainer; a Hindu divinity worshipped as the preserver of worlds
-Hindu deity|Hindu god of death and lord of the underworld
-Hindu deity|the manifestation of a Hindu deity (especially Vishnu) in human or superhuman or animal form; "some Hindus consider Krishna to be an avatar of the god Vishnu"
+Skanda|Hindu god of war
+Soma|personification of a sacred intoxicating drink used in Vedic ritual
+Surya|an important god of later Hinduism; the sun god or the sun itself worshipped as the source of warmth and light
+Uma|a benevolent aspect of Devi; `splendor'
+Ushas|Hindu goddess of dawn; daughter of the sky and sister of the night
+Vajra|Indra's thunderbolt
+Varuna|in Vedism, god of the night sky who with his thousand eyes watches over human conduct and judges good and evil and punishes evildoers; often considered king of the Hindu gods and frequently paired with Mitra as an upholder of the world
+Vayu|Hindu wind god
+Vishnu|the sustainer; a Hindu divinity worshipped as the preserver of worlds
+Yama|Hindu god of death and lord of the underworld
 Jagannath|an avatar of Vishnu
 Kalki|the 10th and last incarnation of Vishnu
 Krishna|8th and most important avatar of Vishnu; incarnated as a handsome young man playing a flute
@@ -884,32 +879,29 @@ Rama|avatar of Vishnu whose name is synonymous with God; any of three incarnatio
 Ramachandra|a hero in Hindu mythology; an incarnation of Vishnu
 Balarama|elder brother of Krishna; an incarnation of Vishnu
 Parashurama|an incarnation of Vishnu who rid the earth of Kshatriyas
-Persian deity|a deity worshiped by the ancient Persians
 Mithras|ancient Persian god of light and truth; sun god
 Ormazd|chief deity of Zoroastrianism; source of light and embodiment of good
-Persian deity|the spirit of evil in Zoroastrianism; arch rival of Ormazd
+Ahriman|the spirit of evil in Zoroastrianism; arch rival of Ormazd
 Buddha|founder of Buddhism (c 563-483 BC)
 Bodhisattva|Buddhist worthy of nirvana who postpones it to help others
 Maitreya|the Bodhisattva who is to appear as a Buddha 5000 years after the death of Gautama
 Avalokitesvara|a male Bodhisattva; widely associated with various gods and people
 Arhat|a Buddhist who has attained nirvana
-Chinese deity|a deity worshipped by the ancient Chinese
 Chang Kuo-lao|one of the 8 immortals of Taoism
 Wen Ch'ang|Chinese god of literature
-Chinese deity|the three pure ones; the three chief gods of Taoism
+Taoist Trinity|the three pure ones; the three chief gods of Taoism
 Heavenly Jewel|a member of the Taoist Trinity
 Mystic Jewel|a member of the Taoist Trinity
 Spiritual Jewel|a member of the Taoist Trinity; identified with Lao-tse
 Chuang-tzu|4th-century Chinese philosopher on whose teachings Lao-tse based Taoism
 Kuan Yin|(Buddhism) a female Bodhisattva; often called goddess of mercy and considered an aspect of the Bodhisattva Avalokitesvara; identified with Japanese Kwannon
-Japanese deity|a deity worshipped by the Japanese
 Amaterasu Omikami|central deity of Shinto; goddess personifying the sun and ancestress of the rulers of Japan
-Japanese deity|a Shinto god of war
-Japanese deity|one of the 7 gods of happiness
-Japanese deity|the god who fathered the islands and gods of Japan with his sister Izanami
-Japanese deity|sister and consort of Izanami; mother of the islands and gods of Japan
-Japanese deity|one the Shinto deities (including mythological beings, spirits of distinguished men, forces of nature)
-Japanese deity|Japanese counterpart of Chinese Kuan Yin
+Hachiman|a Shinto god of war
+Hotei|one of the 7 gods of happiness
+Izanagi|the god who fathered the islands and gods of Japan with his sister Izanami
+Izanami|sister and consort of Izanami; mother of the islands and gods of Japan
+Kami|one the Shinto deities (including mythological beings, spirits of distinguished men, forces of nature)
+Kwannon|Japanese counterpart of Chinese Kuan Yin
 Ninigi|grandson of Amaterasu and first ruler of Japan
 God|the supernatural being conceived as the perfect and omnipotent and omniscient originator and ruler of the universe; the object of worship in monotheistic religions
 Godhead|terms referring to the Judeo-Christian God
@@ -921,7 +913,6 @@ Messiah|Jesus Christ; considered by Christians to be the promised deliverer
 Holy Spirit|the third person in the Trinity; Jesus promised the Apostles that he would send the Holy Spirit after his Crucifixion and Resurrection; it came on Pentecost
 Yahweh|a name for the God of the Old Testament as transliterated from the Hebrew consonants YHVH
 Allah|Muslim name for the one and only God
-Roman deity|ancient Italian deity in human shape, with horns, pointed ears and a goat's tail; equivalent to Greek satyr
 Gabriel|(Bible) the archangel who was the messenger of God
 Michael|(Old Testament) the guardian archangel of the Jews
 Raphael|an archangel of the Hebrew tradition
@@ -932,10 +923,7 @@ Oberson|(Middle Ages) the king of the fairies and husband of Titania in medieval
 Titania|(Middle Ages) the queen of the fairies in medieval folklore
 Flying Dutchman|the captain of a phantom ship (the Flying Dutchman) who was condemned to sail against the wind until Judgment Day
 Adonis|(Greek mythology) a handsome youth loved by both Aphrodite and Persephone; "when Adonis died Zeus decreed that he should spend winters in the underworld with Persephone and spend summers with Aphrodite"
-Graeco-Roman deity|a deity of classical mythology
 Silenus|the chief satyr in the service of Bacchus; father of Dionysus; usually depicted as drunk and jolly and riding a donkey
-Greek deity|any of the minor woodland deities who were companions of Dionysus (similar to the satyrs)
-Greco-Roman deity|(classical mythology) a minor nature goddess usually depicted as a beautiful maiden; "the ancient Greeks believed that nymphs inhabited forests and bodies of water"
 Echo|(Greek mythology) a nymph who was spurned by Narcissus and pined away until only her voice remained
 Hesperides|(Greek mythology) group of 3 to 7 nymphs who guarded the golden apples that Gaea gave as a wedding gift to Hera
 Hyades|(Greek mythology) 7 daughters of Atlas and half-sisters of the Pleiades; they nurtured the infant Dionysus and Zeus placed them among the stars as a reward
@@ -945,73 +933,71 @@ Sterope|(Greek mythology) one of the 7 Pleiades
 Daphne|(Greek mythology) a nymph who was transformed into a laurel tree to escape the amorous Apollo
 Thetis|(Greek mythology) one of the 50 Nereids; mother of Achilles by Peleus
 Salmacis|nymph who merged with Hermaphroditus to form one body
-Greek deity|a deity worshipped by the ancient Greeks
-Roman deity|a deity worshipped by the ancient Romans
 Olympian|a classical Greek god after the overthrow of the Titans
 Aeolus|god of the winds in ancient mythology
-Greek deity|personification of the sky or upper air breathed by the Olympians; son of Erebus and night or of Chaos and darkness
+Aether|personification of the sky or upper air breathed by the Olympians; son of Erebus and night or of Chaos and darkness
 Apollo|(Greek mythology) Greek god of light; god of prophecy and poetry and music and healing; son of Zeus and Leto; twin brother of Artemis
 Pythius|epithet for Apollo; from the dragon Python which he killed
 Aphrodite|goddess of love and beauty and daughter of Zeus in ancient mythology; identified with Roman Venus
 Venus|goddess of love; counterpart of Greek Aphrodite
-Greek deity|(Greek mythology) Greek god of war; son of Zeus and Hera; identified with Roman Mars
-Greek deity|(Greek mythology) goddess of discord; sister of Ares
-Greek deity|(Greek mythology) the Greek personification of death; son of Nyx
-Roman deity|(Roman mythology) Roman god of death; counterpart of Thanatos
-Roman deity|(Roman mythology) Roman god of war and agriculture; father of Romulus and Remus; counterpart of Greek Ares
-Greek deity|(Greek mythology) Greek goddess of the night; daughter of Chaos; counterpart of Roman Nox
+Ares|(Greek mythology) Greek god of war; son of Zeus and Hera; identified with Roman Mars
+Eris|(Greek mythology) goddess of discord; sister of Ares
+Thanatos|(Greek mythology) the Greek personification of death; son of Nyx
+Mors|(Roman mythology) Roman god of death; counterpart of Thanatos
+Mars|(Roman mythology) Roman god of war and agriculture; father of Romulus and Remus; counterpart of Greek Ares
+Nyx|(Greek mythology) Greek goddess of the night; daughter of Chaos; counterpart of Roman Nox
 Rea Silvia|(Roman mythology) a vestal virgin who became the mother by Mars of the twins Romulus and Remus
 Artemis|(Greek mythology) the virgin goddess of the hunt and the Moon; daughter of Leto and twin sister of Apollo; identified with Roman Diana
-Greek deity|(Greek mythology) the god who personified the north wind; "Boreas was pictured as bearded and powerful and winged and draped against the cold"
-Roman deity|(Roman mythology) virgin goddess of the hunt and the Moon; counterpart of Greek Artemis
-Greek deity|goddess of criminal rashness and its punishment
+Boreas|(Greek mythology) the god who personified the north wind; "Boreas was pictured as bearded and powerful and winged and draped against the cold"
+Diana|(Roman mythology) virgin goddess of the hunt and the Moon; counterpart of Greek Artemis
+Ate|goddess of criminal rashness and its punishment
 Athena|(Greek mythology) goddess of wisdom and useful arts and prudent warfare; guardian of Athens; identified with Roman Minerva
-Roman deity|(Roman mythology) goddess of wisdom; counterpart of Greek Athena
-Greek deity|(Greek mythology) the most ancient of gods; the personification of the infinity of space preceding creation of the universe
+Minerva|(Roman mythology) goddess of wisdom; counterpart of Greek Athena
+Chaos|(Greek mythology) the most ancient of gods; the personification of the infinity of space preceding creation of the universe
 Cronus|(Greek mythology) the supreme god until Zeus dethroned him; son of Uranus and Gaea in ancient Greek mythology; identified with Roman Saturn
 Dido|(Roman mythology) a princess of Tyre who was the founder and queen of Carthage; Virgil tells of her suicide when she was abandoned by Aeneas
-Roman deity|(Roman mythology) god of agriculture and vegetation; counterpart of Greek Cronus; "Saturday is Saturn's Day"
-Greek deity|(Greek mythology) goddess of fertility and protector of marriage in ancient mythology; counterpart of Roman Ceres
-Roman deity|(Roman mythology) goddess of agriculture; counterpart of Greek Demeter
+Saturn|(Roman mythology) god of agriculture and vegetation; counterpart of Greek Cronus; "Saturday is Saturn's Day"
+Demeter|(Greek mythology) goddess of fertility and protector of marriage in ancient mythology; counterpart of Roman Ceres
+Ceres|(Roman mythology) goddess of agriculture; counterpart of Greek Demeter
 Dionysus|(Greek mythology) god of wine and fertility and drama; the Greek name of Bacchus
-Greek deity|(Greek mythology) wife of Nereus and mother of the Nereids
+Doris|(Greek mythology) wife of Nereus and mother of the Nereids
 Aesculapius|son of Apollo; a hero and the Roman god of medicine and healing; his daughters were Hygeia and Panacea
-Greco-Roman deity|(classical mythology) god of wine; equivalent of Dionysus
-Greek deity|(Greek mythology) Greek god of darkness who dwelt in the underworld; son of Chaos; brother of Nox; father of Aether and Day
+Bacchus|(classical mythology) god of wine; equivalent of Dionysus
+Erebus|(Greek mythology) Greek god of darkness who dwelt in the underworld; son of Chaos; brother of Nox; father of Aether and Day
 Nox|Roman goddess of night; daughter of Erebus; counterpart of Greek Nyx
 Eros|(Greek mythology) god of love; son of Aphrodite; identified with Roman Cupid
 Cupid|(Roman mythology) god of love; counterpart of Greek Eros
 Daedalus|(Greek mythology) an Athenian inventor who built the labyrinth of Minos; to escape the labyrinth he fashioned wings for himself and his son Icarus
 Damon and Pythias|(Greek mythology) according to a Greek legend: when Pythias was sentenced to be executed Damon took his place to allow Pythias to get his affairs in order; when Pythias returned in time to save Damon the king was so impressed that he let them both live
 Gaea|(Greek mythology) goddess of the earth and mother of Cronus and the Titans in ancient mythology
-Greek deity|(Greek mythology) the goddess of youth and spring; wife of Hercules; daughter of Zeus and Hera; cupbearer to the Olympian gods
-Greek deity|(Greek mythology) ancient god of the sun; drove his chariot across the sky each day; identified with Roman Sol
-Roman deity|(Roman mythology) ancient Roman god; personification of the sun; counterpart of Greek Helios
-Greek deity|(Greek mythology) Greek goddess of fertility who later became associated with Persephone as goddess of the underworld and protector of witches
+Hebe|(Greek mythology) the goddess of youth and spring; wife of Hercules; daughter of Zeus and Hera; cupbearer to the Olympian gods
+Helios|(Greek mythology) ancient god of the sun; drove his chariot across the sky each day; identified with Roman Sol
+Sol|(Roman mythology) ancient Roman god; personification of the sun; counterpart of Greek Helios
+Hecate|(Greek mythology) Greek goddess of fertility who later became associated with Persephone as goddess of the underworld and protector of witches
 Hephaestus|(Greek mythology) the lame god of fire and metalworking in ancient mythology; identified with Roman Vulcan
-Roman deity|(Roman mythology) god of fire and metal working; counterpart of Greek Hephaestus
-Greek deity|(Greek mythology) messenger and herald of the gods; god of commerce and cunning and invention and theft; identified with Roman Mercury
-Greek deity|(Greek mythology) son of Hermes and Aphrodite who merged with the nymph Salmacis to form one body
+Vulcan|(Roman mythology) god of fire and metal working; counterpart of Greek Hephaestus
+Hermes|(Greek mythology) messenger and herald of the gods; god of commerce and cunning and invention and theft; identified with Roman Mercury
+Hermaphroditus|(Greek mythology) son of Hermes and Aphrodite who merged with the nymph Salmacis to form one body
 Mercury|(Roman mythology) messenger of Jupiter and god of commerce; counterpart of Greek Hermes
-Greek deity|(Greek mythology) the goddess of health; daughter of Aesculapius and sister of Panacea
-Greek deity|(Greek mythology) the goddess of healing; daughter of Aesculapius and sister of Hygeia
+Hygeia|(Greek mythology) the goddess of health; daughter of Aesculapius and sister of Panacea
+Panacea|(Greek mythology) the goddess of healing; daughter of Aesculapius and sister of Hygeia
 Hera|queen of the Olympian gods in ancient Greek mythology; sister and wife of Zeus remembered for her jealously of the many mortal women Zeus fell in love with; identified with Roman Juno
 Io|(Greek mythology) a maiden seduced by Zeus; when Hera was about to discover them together Zeus turned her into a white heifer
-Roman deity|(Roman mythology) the Roman god of doorways and passages; is depicted with two faces on opposite sides of his head
-Roman deity|(Roman mythology) queen of the Olympian gods who protected marriage; wife and sister of Jupiter; counterpart of Greek Hera
-Greek deity|(Greek mythology) the goddess of the hearth and its fire in ancient mythology; identified with Roman Vesta
-Roman deity|(Roman mythology) goddess of the hearth and its fire whose flame was tended by vestal virgins; counterpart of Greek Hestia
-Greek deity|(Greek mythology) the god of marriage
+Janus|(Roman mythology) the Roman god of doorways and passages; is depicted with two faces on opposite sides of his head
+Juno|(Roman mythology) queen of the Olympian gods who protected marriage; wife and sister of Jupiter; counterpart of Greek Hera
+Hestia|(Greek mythology) the goddess of the hearth and its fire in ancient mythology; identified with Roman Vesta
+Vesta|(Roman mythology) goddess of the hearth and its fire whose flame was tended by vestal virgins; counterpart of Greek Hestia
+Hymen|(Greek mythology) the god of marriage
 Hyperion|(Greek mythology) a Titan who was the son of Gaea and Uranus and the father of Helios and Selene and Eos in ancient mythology
 Minos|son of Zeus and Europa; king of ancient Crete; ordered Daedalus to build the labyrinth; after death Minos became a judge in the underworld
-Greek deity|beautiful daughter of Minos and Pasiphae; she fell in love with Theseus and gave him the thread with which he found his way out of the Minotaur's labyrinth
+Ariadne|beautiful daughter of Minos and Pasiphae; she fell in love with Theseus and gave him the thread with which he found his way out of the Minotaur's labyrinth
 Moirai|any of the three Greek goddesses of fate or destiny; identified with the Roman Parcae and similar to the Norse Norns
-Roman deity|any of the three Roman goddesses of fate or destiny; identified with the Greek Moirai and similar to the Norse Norns
+Parcae|any of the three Roman goddesses of fate or destiny; identified with the Greek Moirai and similar to the Norse Norns
 Clotho|the Greek goddess of fate who spins the thread of life
-Greek deity|the Greek goddess of fate who determines the length of the thread of life
-Greek deity|the Greek goddess of fate who cuts the thread of life
+Lachesis|the Greek goddess of fate who determines the length of the thread of life
+Atropos|the Greek goddess of fate who cuts the thread of life
 Momus|god of blame and mockery
-Greek deity|in ancient Greek mythology any of 9 daughters of Zeus and Mnemosyne; protector of an art or science
+Muse|in ancient Greek mythology any of 9 daughters of Zeus and Mnemosyne; protector of an art or science
 Calliope|(Greek mythology) the Muse of epic poetry
 Clio|(Greek mythology) the Muse of history
 Erato|(Greek mythology) the Muse of lyric and love poetry
@@ -1021,38 +1007,38 @@ Polyhymnia|(Greek mythology) the Muse of singing and mime and sacred dance
 Terpsichore|(Greek mythology) the Muse of the dance and of choral song
 Thalia|(Greek mythology) the Muse of comedy and pastoral poetry
 Urania|(Greek mythology) the Muse of astronomy
-Greek deity|(Greek mythology) the goddess of divine retribution and vengeance
-Greek deity|(Greek mythology) a sea god son of Pontus and Gaea; lived in the depths of the sea with his wife Doris and their daughters the Nereids
-Greek deity|(Greek mythology) winged goddess of victory; identified with Roman Victoria
-Roman deity|(Roman mythology) goddess of victory; counterpart of Greek Nike
+Nemesis|(Greek mythology) the goddess of divine retribution and vengeance
+Nereus|(Greek mythology) a sea god son of Pontus and Gaea; lived in the depths of the sea with his wife Doris and their daughters the Nereids
+Nike|(Greek mythology) winged goddess of victory; identified with Roman Victoria
+Victoria|(Roman mythology) goddess of victory; counterpart of Greek Nike
 Ouranos|(Greek mythology) god of the heavens; son and husband of Gaea and father of the Titans in ancient mythology
-Roman deity|(Roman mythology) ancient rural deity; later considered a counterpart of Greek Pan
-Greek deity|(Greek mythology) daughter of Helios and mother of Ariadne
+Faunus|(Roman mythology) ancient rural deity; later considered a counterpart of Greek Pan
+Pasiphae|(Greek mythology) daughter of Helios and mother of Ariadne
 Pontus|(Greek mythology) ancient personification of the sea; father of Nereus
-Greek deity|(Greek mythology) the god of the sea and earthquakes in ancient mythology; brother of Zeus and Hades and Hera; identified with Roman Neptune
+Poseidon|(Greek mythology) the god of the sea and earthquakes in ancient mythology; brother of Zeus and Hades and Hera; identified with Roman Neptune
 Proteus|(Greek mythology) a prophetic god who served Poseidon; was capable of changing his shape at will
-Roman deity|(Roman mythology) god of the sea; counterpart of Greek Poseidon
+Neptune|(Roman mythology) god of the sea; counterpart of Greek Poseidon
 Persephone|(Greek mythology) daughter of Zeus and Demeter; made queen of the underworld by Pluto in ancient mythology; identified with Roman Proserpina
 Proserpina|goddess of the underworld; counterpart of Greek Persephone
-Greek deity|(Greek mythology) son of Helios; killed when trying to drive his father's chariot and came too close to earth
+Phaethon|(Greek mythology) son of Helios; killed when trying to drive his father's chariot and came too close to earth
 Hades|(Greek mythology) the god of the underworld in ancient mythology; brother of Zeus and husband of Persephone
 Pluto|(Roman mythology) god of the underworld; counterpart of Greek Hades
 Pythia|(Greek mythology) the priestess of Apollo at Delphi who transmitted the oracles
-Greco-Roman deity|(classical mythology) god of male procreative power and guardian of gardens and vineyards
-Greek deity|(Greek mythology) a judge of the dead in the underworld
-Greek deity|(Greek mythology) goddess of the Moon in ancient mythology; identified with Roman Luna
-Roman deity|(Roman mythology) the goddess of the Moon; counterpart of Greek Selene
-Greek deity|(Greek mythology) the winged goddess of the dawn in ancient mythology; daughter of Hyperion; identified with Roman Aurora
+Priapus|(classical mythology) god of male procreative power and guardian of gardens and vineyards
+Rhadamanthus|(Greek mythology) a judge of the dead in the underworld
+Selene|(Greek mythology) goddess of the Moon in ancient mythology; identified with Roman Luna
+Luna|(Roman mythology) the goddess of the Moon; counterpart of Greek Selene
+Eos|(Greek mythology) the winged goddess of the dawn in ancient mythology; daughter of Hyperion; identified with Roman Aurora
 Orpheus|(Greek mythology) a great musician; when his wife Eurydice died he went to Hades to get her back but failed
-Roman deity|(Roman mythology) goddess of the dawn; counterpart of Greek Eos
-Roman deity|(Roman mythology) goddess of the earth; protector of marriage and fertility; identified with Greek Gaea
-Greek deity|(Greek mythology) any of the primordial giant gods who ruled the Earth until overthrown by Zeus; the Titans were offspring of Uranus (Heaven) and Gaea (Earth)
-Greek deity|(Greek mythology) any of the primordial giant goddesses who were offspring of Uranus (heaven) and Gaea (earth) in ancient mythology
-Greek deity|(Greek mythology) a sea god; son of Poseidon
-Greek deity|(Greek mythology) the goddess of fortune; identified with Roman Fortuna
-Roman deity|(Roman mythology) the goddess of fortune and good luck; counterpart of Greek Tyche
-Greek deity|(Greek mythology) the Greek god of the west wind
-Greek deity|(Greek mythology) the supreme god of ancient Greek mythology; son of Rhea and Cronus whom he dethroned; husband and brother of Hera; brother of Poseidon and Hades; father of many gods; counterpart of Roman Jupiter
+Aurora|(Roman mythology) goddess of the dawn; counterpart of Greek Eos
+Tellus|(Roman mythology) goddess of the earth; protector of marriage and fertility; identified with Greek Gaea
+Titan|(Greek mythology) any of the primordial giant gods who ruled the Earth until overthrown by Zeus; the Titans were offspring of Uranus (Heaven) and Gaea (Earth)
+Titaness|(Greek mythology) any of the primordial giant goddesses who were offspring of Uranus (heaven) and Gaea (earth) in ancient mythology
+Triton|(Greek mythology) a sea god; son of Poseidon
+Tyche|(Greek mythology) the goddess of fortune; identified with Roman Fortuna
+Fortuna|(Roman mythology) the goddess of fortune and good luck; counterpart of Greek Tyche
+Zephyr|(Greek mythology) the Greek god of the west wind
+Zeus|(Greek mythology) the supreme god of ancient Greek mythology; son of Rhea and Cronus whom he dethroned; husband and brother of Hera; brother of Poseidon and Hades; father of many gods; counterpart of Roman Jupiter
 Jupiter|(Roman mythology) supreme god of Romans; counterpart of Greek Zeus
 Jupiter Fulminator|an epithet for Jupiter
 Jupiter Tonans|an epithet for Jupiter
@@ -1068,7 +1054,7 @@ Epimetheus|(Greek mythology) brother of Prometheus; despite Prometheus's warning
 Prometheus|(Greek mythology) the Titan who stole fire from Olympus and gave it to mankind; Zeus punished him by chaining him to a rock where an eagle gnawed at his liver until Hercules rescued him
 Thea|(Greek mythology) the Titaness who was mother of Helios and Selene and Eos in ancient mythology
 Rhea|fertility goddess in ancient Greek mythology; wife of Cronus and mother of Zeus; identified with Roman Ops and Cybele of ancient Asia Minor
-Roman deity|(Roman mythology) goddess of abundance and fertility; wife of Saturn; counterpart of Greek Rhea and Cybele of ancient Asia Minor
+Ops|(Roman mythology) goddess of abundance and fertility; wife of Saturn; counterpart of Greek Rhea and Cybele of ancient Asia Minor
 Sylvanus|(Roman mythology) god of woods and fields and flocks; Pan is the Greek counterpart
 Agdistis|Asiatic epithet for Rhea or Cybele
 Themis|(Greek mythology) the Titaness who was goddess of justice in ancient mythology
@@ -1077,46 +1063,43 @@ Phoebe|(Greek mythology) a Titaness who became identified with Artemis as goddes
 Tethys|(Greek mythology) a Titaness and sea goddess; wife of Oceanus
 Leto|wife or mistress of Zeus and mother of Apollo and Artemis in ancient mythology; called Latona in Roman mythology
 Hercules|(classical mythology) a hero noted for his strength; performed 12 immense labors to gain immortality
-Norse deity|a deity worshipped by the ancient Norsemen
-Norse deity|(Norse mythology) the chief of gods living at Asgard
+Aesir|(Norse mythology) the chief of gods living at Asgard
 Andvari|(Norse mythology) a dwarf who possessed a treasure that was stolen by Loki
-Norse deity|(Norse mythology) group of ancient gods sometimes in conflict with the Aesir
+Vanir|(Norse mythology) group of ancient gods sometimes in conflict with the Aesir
 Balder|(Norse mythology) god of light and peace and noted for his beauty and sweet nature; son of Odin and Frigg and husband of Nanna; killed by Hoth
 Bragi|(Norse mythology) god of poetry and music; son of Odin
-Norse deity|(Norse mythology) goddess of old age who defeated Thor in a wrestling match
-Norse deity|(Norse mythology) god of justice; son of Balder and Nanna
+Elli|(Norse mythology) goddess of old age who defeated Thor in a wrestling match
+Forseti|(Norse mythology) god of justice; son of Balder and Nanna
 Frey|(Norse mythology) god of earth's fertility and peace and prosperity; son of Njorth and brother of Freya; originally of the Vanir; later with the Aesir
 Freya|(Norse mythology) goddess of love and fecundity; daughter of Njorth and sister of Frey
 Frigg|(Norse mythology) goddess of the heavens and married love; wife of Odin
 Heimdall|(Norse mythology) god of dawn and light; guardian of Asgard
 Hel|(Norse mythology) goddess of the dead and queen of the underworld
-Norse deity|(Norse mythology) one of the Aesir having a strong and beautiful body but a dull mind
+Hoenir|(Norse mythology) one of the Aesir having a strong and beautiful body but a dull mind
 Hoth|(Norse mythology) a blind god; misled by Loki, he kills his brother Balder by throwing a shaft of mistletoe
 Idun|(Norse mythology) goddess of spring and wife of Bragi; guarded the apples that kept the gods eternally young
 Jotun|(Norse mythology) one of a group of giants often in conflict with the Aesir
-Norse deity|(Norse mythology) trickster; god of discord and mischief; contrived death of Balder and was overcome by Thor
+Loki|(Norse mythology) trickster; god of discord and mischief; contrived death of Balder and was overcome by Thor
 Mimir|(Norse mythology) giant who lives in the roots of Yggdrasil and guards the well of wisdom
-Norse deity|(Norse mythology) wife of Balder
+Nanna|(Norse mythology) wife of Balder
 Njord|(Norse mythology) chief of the Vanir; god of the sea and winds and prosperity; father of Frey and Freya; sometimes subsumes Teutonic Nerthus
 Urd|goddess of fate: a giantess who personified the past
 Verdandi|goddess of fate: an elf who personified the present
 Skuld|goddess of fate: a dwarf who personified the future
-Norse deity|(Norse mythology) ruler of the Aesir; supreme god of war and poetry and knowledge and wisdom (for which he gave an eye) and husband of Frigg; identified with the Teutonic Wotan
-Norse deity|(Norse mythology) wife of Thor and guardian of the home
-Norse deity|(Norse mythology) wife of Loki; held a cup over him during his punishment to spare him the pain of drops of poison
-Norse deity|(Norse mythology) god of thunder and rain and farming; pictured as wielding a hammer emblematic of the thunderbolt; identified with Teutonic Donar
+Odin|(Norse mythology) ruler of the Aesir; supreme god of war and poetry and knowledge and wisdom (for which he gave an eye) and husband of Frigg; identified with the Teutonic Wotan
+Sif|(Norse mythology) wife of Thor and guardian of the home
+Sigyn|(Norse mythology) wife of Loki; held a cup over him during his punishment to spare him the pain of drops of poison
+Thor|(Norse mythology) god of thunder and rain and farming; pictured as wielding a hammer emblematic of the thunderbolt; identified with Teutonic Donar
 Tyr|(Norse mythology) god of war and strife and son of Odin; identified with Anglo-Saxon Tiu
 Ull|(Norse mythology) one of the Aesir known for his beauty and skill with bow and skis; son of Sif and stepson of Thor
-Norse deity|(Norse mythology) one of the Aesir and avenger of Balder; son of Odin
+Vali|(Norse mythology) one of the Aesir and avenger of Balder; son of Odin
 Vitharr|(Norse mythology) one of the Aesir; son of Odin; avenges his parent by slaying Fenrir at Ragnarok
 Yggdrasil|(Norse mythology) a huge ash tree whose roots and branches hold the earth and Heaven and Hell together
 Wayland the Smith|(European mythology) a supernatural smith and king of the elves; identified with Norse Volund
-Teutonic deity|(German mythology) a deity worshipped by the ancient Teutons
-Teutonic deity|the Teutonic god of thunder; counterpart of Norse Thor
+Donar|the Teutonic god of thunder; counterpart of Norse Thor
 Nerthus|the Teutonic goddess of fertility; later identified with Norse Njord
-Teutonic deity|supreme Teutonic god; counterpart of Norse Odin and Anglo-Saxon Woden
-Anglo-Saxon deity|(Anglo-Saxon mythology) a deity worshipped by the Anglo-Saxons
-Anglo-Saxon deity|god of war and sky; counterpart of Norse Tyr
+Wotan|supreme Teutonic god; counterpart of Norse Odin and Anglo-Saxon Woden
+Tiu|god of war and sky; counterpart of Norse Tyr
 Woden|chief god; counterpart of Norse Odin and Teutonic Wotan
 Wyrd|fate personified; any one of the three Weird Sisters
 Adam|(Old Testament) in Judeo-Christian mythology; the first man and the husband of Eve and the progenitor of the human race
@@ -2312,7 +2295,7 @@ Yankee|an American who lives in the North (especially during the American Civil 
 Young Turk|a member of one or more of the insurgent groups in Turkey in the late 19th century who rebelled against the absolutism of Ottoman rule
 Zealot|a member of an ancient Jewish sect in Judea in the first century who fought to the death against the Romans and who killed or persecuted Jews who collaborated with the Romans
 Zionist|a Jewish supporter of Zionism
-Persian deity|the Zoroastrian god of time
+Zurvan|the Zoroastrian god of time
 Alvar Aalto|Finnish architect and designer of furniture (1898-1976)
 Aaron|(Old Testament) elder brother of Moses and first high priest of the Israelites; created the golden calf
 Henry Louis Aaron|United States professional baseball player who hit more home runs than Babe Ruth (born in 1934)
