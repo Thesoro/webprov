@@ -82,11 +82,12 @@ class ContactEmail(webapp2.RequestHandler):
 
     elif x['isvariant']:
       body = "<variations>\n"
-      if x.has_key('variants'):
-        d = x['variants'].split('\n')
-        for i in d:
-          body += ("    <variant>"+i+"</variant>\n")
-        body += "</variations>"
+      if x.has_key('description'):
+        body += "    <variant"
+        if x.has_key('name'):
+          body += " name='" + x['name']+"'"
+        body += ">"+x['description']+"</variant>\n"
+      body += "</variations>"
 
     for o in ['author', 'notes']:
       if x.has_key(o):
