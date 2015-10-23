@@ -4,10 +4,10 @@
       <h1>About</h1>
     </li>
     <li class="list-group-item">
-      webProv is an improv encyclopedia and suggestion generator.
+      Playbook is an improv encyclopedia and suggestion generator.
     </li>
     <li class="list-group-item">
-      webProv site copyright © 2015 by Rob Whitehead. Interface design duplicated with permission from iProv app by Dan Posluns
+      Playbook site copyright © 2015 by Rob Whitehead. Interface design duplicated with permission from iProv app by Dan Posluns
     </li>
   </ul>
 
@@ -16,7 +16,7 @@
       <h3>Acknowledgements</h3>
     </li>
     <li class="list-group-item">
-      Improv game encyclopedia courtesy of iProv database, which is in turn based on <i>The Living Playbook</i> by <a href="http://www.unexpectedproductions.org">Unexpected Productions</a> edited by Randy Dixon.
+      Improv game encyclopedia courtesy of iProv database, which is in turn based on <i>The Living Playbook</i> by <a href="http://www.unexpectedproductions.org">Unexpected Productions</a> edited by Randy Dixon. The iProv database is licensed under <a href="http://www.creativecommons.org">Creative Commons</a>.
     </li>
     <li class="list-group-item">
       Word and title contents courtesy of <a href="http://www.wordnet.princeton.edu">Wordnet</a>
@@ -32,7 +32,7 @@
   <ul class="list-group">
     <li class="list-group-item"><h2>Submit Game</h2></li>
     <li class="list-group-item">
-      <h3>Thanks for taking an interest in contributing to webProv!<h3>
+      <h3>Thanks for taking an interest in contributing to Playbook!<h3>
         <h5>If you have a game, handle, or form that doesn't currently exist in the app, We'd love to hear about it. Here are some things you should know first:</h5>
     </li>
   </ul>
@@ -48,8 +48,10 @@
       Please do not submit any content that is subject to copyright.
     </li>
     <li class="list-group-item">
-      There is no timetable for releases. webProv is a labor of love and love is fickle.
+      There is no timetable for releases. Playbook is a labor of love and love is fickle.
     </li>
+    <div class="alert alert-success" role="alert" ng-if="thanks">Thanks for your submission!</div>
+
     <li class="list-group-item">
       <button class="btn btn-lg btn-primary" ng-click="changeView('inputform')">OK JUST OK</button>
     </li>
@@ -60,7 +62,7 @@
   <ul class="list-group">
     <li class="list-group-item"><h2>Settings</h2></li>
     <li class="list-group-item">
-      webProv stores game history and favs in browser cookies. The data is very small (less than 4KB). We do not store any other cookies or track or send any other information.
+      Playbook stores game history and favs in browser cookies. The data is very small (less than 4KB). We do not store any other cookies or track or send any other information.
       If you would like to delete these cookies, you may do so via your browser settings, or here:
     </li>
     <li class="list-group-item">
@@ -78,8 +80,8 @@
     <li class="list-group-item">
       How many games are you submitting?<br>
       <ul class="nav nav-pills" style="margin-top:0.2em;">
-        <li ng-class="{active:!manysub}" ng-click="manysub = !manysub"><a style="border:1px solid #dddddd">A few!</a></li>
-        <li ng-class="{active:manysub}" ng-click="manysub = !manysub"><a style="border:1px solid #dddddd">Lots!</a></li>
+        <li ng-class="{active:!manysub}" ng-click="manysub = !manysub"><a style="border:1px solid #dddddd;cursor:pointer;">A few!</a></li>
+        <li ng-class="{active:manysub}" ng-click="manysub = !manysub"><a style="border:1px solid #dddddd;cursor:pointer;">Lots!</a></li>
       </ul>
     </li>
   </ul>

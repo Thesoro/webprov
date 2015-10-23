@@ -93,7 +93,7 @@ class ContactEmail(webapp2.RequestHandler):
       if x.has_key(o):
         body += "\n\n"+o+": "+x[o]
 
-    message = mail.EmailMessage(sender='rob.whitehead@gmail.com',subject='webProv game submission')
+    message = mail.EmailMessage(sender='rob.whitehead@gmail.com',subject='Playbook game submission')
     message.to = 'rob.whitehead@gmail.com'
     message.body = body
     message.send()

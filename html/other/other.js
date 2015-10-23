@@ -86,10 +86,10 @@ angular.module('myApp.other', ['ngRoute'])
 
     $scope.submission.selectedgame = $scope.submission.selectedgame.name
     $http.post("/api/submit/",sub)
-    initPage();
+    initPage(true);
   }
 
-  var initPage = function() {
+  var initPage = function(thanks) {
     $scope.submission = {'isvariant':true}
     $scope.view = ''
     $scope.manysub = false
@@ -104,6 +104,7 @@ angular.module('myApp.other', ['ngRoute'])
     $scope.delhist = false
     $scope.delfavs = false
     $scope.getGames();
+    $scope.thanks = thanks
   }
   initPage();
 }]);
