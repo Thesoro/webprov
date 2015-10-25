@@ -9,7 +9,9 @@ from base64 import b64encode, b64decode
 # Generate random hashes for session id
 import random
 import xmltodict
+import urllib2
 import json
+import secret
 
 # this function returns game data
 class GameList(webapp2.RequestHandler):
@@ -46,6 +48,18 @@ class GetTitle(webapp2.RequestHandler):
     d = line.split('|')
     out = {'def':d[1], 'word':d[0]}
     self.response.write(json.dumps(out))
+
+class GetTweets(webapp2.RequestHandler):
+  def get(self,userid):
+    bearer = secret.bearer
+
+    url = 'https://api.twitter.com/1.1/statuses/user_timeline.json?count=200&screen_name='+userid+'&exclude_replies=false&include_rts=false'
+    headers = {'Authorization':'Bearer '+ bearer}
+
+    request = urllib2.Request(url, headers=headers)
+    contents = urllib2.urlopen(request).read()
+    self.response.write(contents)
+
 
 class ContactEmail(webapp2.RequestHandler):
   def post(self,type):
@@ -107,6 +121,7 @@ application = webapp2.WSGIApplication( [
   ("/api/word/title", GetTitle),
   ("/api/word/(.*)", GetWord),
   ("/api/submit/(.*)", ContactEmail),
+  ("/api/tweets/(.*)", GetTweets),
 
 
 ], debug=True)

@@ -9,6 +9,7 @@ angular.module('myApp', [
   'myApp.word',
   'myApp.movie',
   'myApp.other',
+  'myApp.tweets',
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -41,6 +42,11 @@ config(['$routeProvider', function($routeProvider) {
     controller: "movieCtrl",
     title: "movie",
     templateUrl: "/html/movie/movie.html"
+  })
+  .when("/tweets/", {
+    controller: "tweetsCtrl",
+    title: "tweets",
+    templateUrl: "/html/tweets/tweets.html"
   })
   .otherwise({redirectTo: '/main'});
 }]);

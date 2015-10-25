@@ -1,0 +1,21 @@
+<input ng-model="username" type="text"></input> <br><button class="btn btn-primary btn-md" ng-click="getTweets()">Get tweets from this user</button>
+<div class="alert alert-danger" role="alert" ng-if="error">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Error:</span>
+  User not found
+</div>
+<div ng-if="tweets">
+  <ul class="list-group">
+    <li class="list-group-item" style="min-height:30vh">
+      <div class="col-sm-1">
+        <img src="{{viewtweet.user.profile_image_url}}">
+      </div>
+      <div class="col-sm-11">
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">{{viewtweet.text}}</p>&mdash; {{viewtweet.user.name}} (@{{viewtweet.user.screen_name}}) <a href="https://twitter.com/{{viewtweet.user.screen_name}}/status/{{viewtweet.id_str}}">{{viewtweet.created_at | date: 'MMMM d, y'}}</a><br><button ng-click="randomTweet()" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-refresh"></i></button></blockquote>
+        <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="clearfix"></div>
+    </li>
+
+  </ul>
+</div>
