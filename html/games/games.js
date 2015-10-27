@@ -9,8 +9,8 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
 //   });
 // }])
 
-.controller('gamesCtrl', ['$scope','$http','$routeParams','$log','$location','$cookies',
-  function($scope,$http,$routeParams,$log,$location,$cookies) {
+.controller('gamesCtrl', ['$scope','$http','$routeParams','$log','$location','$cookies','$rootScope',
+  function($scope,$http,$routeParams,$log,$location,$cookies,$rootScope) {
 
   $scope.tagButton = function(tag) {
     $scope.view = 'tags'
@@ -43,7 +43,7 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
   }
 
   $scope.randomGame = function() {
-    $scope.chosengame = $scope.games[Math.floor(Math.random() * ($scope.games.length))];
+    $scope.chosengame = $rootScope.games[Math.floor(Math.random() * ($rootScope.games.length))];
     $scope.cleanupGame();
     $scope.addCookie($scope.chosengame.name,"History")
   }
@@ -70,8 +70,8 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
 
   $scope.getTags = function() {
     $scope.taglist = {}
-    for (var gm in $scope.games) {
-      var t = $scope.stringtoArr($scope.games[gm].tags.tag)
+    for (var gm in $rootScope.games) {
+      var t = $scope.stringtoArr($rootScope.games[gm].tags.tag)
 
       var chosematch = true
       var tagkeys = Object.keys($scope.chosentags)
@@ -208,6 +208,12 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     }
   }
   var initPage = function() {
+    if (!$rootScope.games) {
+      $http.get("/api/game/all").success(function (response) {
+          $rootScope.games = response
+        })
+      }
+    }
     $scope.taglist = {}
     $scope.chosentags = {}
     $scope.emptytags = {}
@@ -218,38 +224,33 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     $scope.style = ["btn-primary", "btn-info","btn-success","btn-warning","btn-danger"]
     $scope.shuffleArray($scope.style)
 
-    if (!$scope.games) {
-      $http.get("/api/game/all").success(function (response) {
-          $scope.games = response
-          if ($routeParams.entityid) {
-            $scope.view = 'game'
-            if ($routeParams.entityid == "random") {
-              $scope.chosengame = true
-              $scope.randomGame();
-            } else if ($routeParams.entityid == "tags") {
-              $scope.getTags();
-              $scope.view = 'tags'
-            } else if ($routeParams.entityid == "history") {
-              $scope.view = "history"
-            } else if ($routeParams.entityid == "favorites") {
-              $scope.view = "favorites"
-            } else {
-              for (var g in $scope.games) {
-                if ($scope.games[g].name.toLowerCase() == $routeParams.entityid.toLowerCase()) {
-                  $scope.chosengame = $scope.games[g]
-                }
-              }
-              $scope.addCookie($routeParams.entityid,"History")
-            }
-
-            if ($scope.chosengame) {
-              $scope.cleanupGame();
-            }
-          } else {
-            $scope.view = 'all'
+    if ($routeParams.entityid) {
+      $scope.view = 'game'
+      if ($routeParams.entityid == "random") {
+        $scope.chosengame = true
+        $scope.randomGame();
+      } else if ($routeParams.entityid == "tags") {
+        $scope.getTags();
+        $scope.view = 'tags'
+      } else if ($routeParams.entityid == "history") {
+        $scope.view = "history"
+      } else if ($routeParams.entityid == "favorites") {
+        $scope.view = "favorites"
+      } else {
+        for (var g in $rootScope.games) {
+          if ($rootScope.games[g].name.toLowerCase() == $routeParams.entityid.toLowerCase()) {
+            $scope.chosengame = $rootScope.games[g]
           }
-        })
+        }
+        $scope.addCookie($routeParams.entityid,"History")
       }
+
+      if ($scope.chosengame) {
+        $scope.cleanupGame();
+      }
+    } else {
+      $scope.view = 'all'
     }
+
   initPage();
 }]);
