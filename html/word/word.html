@@ -13,12 +13,14 @@
     </span>
 
     <span ng-if="wordtype != 'ttt'">
-    <li class="list-group-item">
-      <h1>{{w.word}}</h1>
-    </li>
-    <li class="list-group-item">
-      {{w.def}}
-    </li>
+      <li class="list-group-item">
+        <h1>{{w.word}}</h1>
+      </li>
+      <span ng-if="wordtype != 'emotion'">
+        <li class="list-group-item">
+          {{w.def}}
+        </li>
+      </span>
     </span>
   </ul>
 </div>

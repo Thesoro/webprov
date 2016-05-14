@@ -29,7 +29,7 @@ class GetWord(webapp2.RequestHandler):
     r = {'adj':[30,18185], 'noun':[30,82144], 'verb':[30,13796], 'adv':[30,3650]}
     x = open("data."+wordtype)
     z = x.readlines()
-    index = random.randint(r[wordtype][0], r[wordtype][1])
+    index = random.randint(r[wordtype][0], len(z))
     line = z[index]
     d = line.split('|')
     definition = d[-1]
@@ -39,11 +39,21 @@ class GetWord(webapp2.RequestHandler):
 
     self.response.write(json.dumps(out))
 
+class GetEmotion(webapp2.RequestHandler):
+  def get(self):
+    x = open('data.emotion')
+    z = x.readlines()
+    index = random.randint(0,len(z))
+    line = z[index]
+    out = {'word':line.lower()}
+
+    self.response.write(json.dumps(out))
+
 class GetTitle(webapp2.RequestHandler):
   def get(self):
     x = open('out.txt')
     z = x.readlines()
-    index = random.randint(0,5595)
+    index = random.randint(0,len(z))
     line = z[index]
     d = line.split('|')
     out = {'def':d[1], 'word':d[0]}
@@ -119,6 +129,7 @@ class ContactEmail(webapp2.RequestHandler):
 application = webapp2.WSGIApplication( [
   ("/api/game/(.*)", GameList),
   ("/api/word/title", GetTitle),
+  ("/api/word/emotion", GetEmotion),
   ("/api/word/(.*)", GetWord),
   ("/api/submit/(.*)", ContactEmail),
   ("/api/tweets/(.*)", GetTweets),

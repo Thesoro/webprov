@@ -227,8 +227,16 @@ angular.module('myApp.games', ['ngRoute','ngCookies'])
     if ($routeParams.entityid) {
       $scope.view = 'game'
       if ($routeParams.entityid == "random") {
-        $scope.chosengame = true
-        $scope.randomGame();
+        if (!$rootScope.games) {
+          $http.get("/api/game/all").success(function (response) {
+              $rootScope.games = response
+              $scope.chosengame = true
+              $scope.randomGame();
+          })
+        } else {
+          $scope.chosengame = true
+          $scope.randomGame();
+        }
       } else if ($routeParams.entityid == "tags") {
         $scope.getTags();
         $scope.view = 'tags'

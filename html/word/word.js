@@ -33,7 +33,7 @@ angular.module('myApp.word', ['ngRoute'])
       $http.get("/api/word/verb").success(function (res) {
         $scope.wordlist['verb'] = res
       })
-    } else if (['adj','adv','noun','verb','title'].indexOf($scope.wordtype != -1)) {
+    } else if (['adj','adv','noun','verb','title','emotion'].indexOf($scope.wordtype != -1)) {
       $http.get("/api/word/"+$routeParams.entityid).success(function (response) {
         $scope.w = response
       })
