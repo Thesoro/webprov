@@ -12,7 +12,7 @@
       </li>
     </span>
 
-    <span ng-if="wordtype != 'ttt'">
+    <span ng-if="wordtype != 'ttt' && wordtype != 'teamname'">
       <li class="list-group-item">
         <h1>{{w.word}}</h1>
       </li>
@@ -21,6 +21,15 @@
           {{w.def}}
         </li>
       </span>
+    </span>
+
+    <span ng-if="wordtype == 'teamname'">
+      <li class="list-group-item">
+        Your team is:
+      </li>
+      <li class="list-group-item">
+        <h1>{{teamname}}</h1>
+      </li>
     </span>
   </ul>
 </div>

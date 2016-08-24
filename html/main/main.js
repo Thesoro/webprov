@@ -27,7 +27,8 @@ angular.module('myApp.main', ['ngRoute'])
                         {name:"Two-too-to", glyph:"", letter:"T.t.t", link:"word/ttt"},
                         {name:"Movies", glyph:"film", link:"movie"},
                         {name:"Tweets", glyph:"retweet", link:"tweets/"},
-                        {name:"Emotions",letter:"🎭", link:"word/emotion"}
+                        {name:"Emotions",letter:"🎭", link:"word/emotion"},
+                        {name:"Team Name",letter:"vs.", link:"word/teamname"}
                      ]
   $scope.moremenu = [
                         {name:"About", glyph:"info-sign", link:"other/about"},
