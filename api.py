@@ -35,7 +35,60 @@ class GetWord(webapp2.RequestHandler):
     definition = d[-1]
     word = d[0].split(' ')[4]
     word = word.replace('_',' ')
+    word = word.replace('(a)','')
+
     out = {'def':definition, 'word':word}
+
+    self.response.write(json.dumps(out))
+
+class GetTeamName(webapp2.RequestHandler):
+  def get(self,allit):
+
+    if allit == 'y':
+      allit = True
+    else:
+      allit = False
+
+    goodlen = False
+    r = {'adj':[30,18185], 'noun':[30,82144], 'verb':[30,13796], 'adv':[30,3650]}
+    types = random.choice([['adv','noun'],['adj','noun'],['adj','noun'],['adj','noun']])
+
+    lines = {}
+    for wordtype in types:
+      x = open("data."+wordtype)
+      lines[wordtype] = x.readlines()
+
+
+    while not goodlen:
+
+      teamname = ''
+      for wordtype in types:
+        z = lines[wordtype]
+        index = random.randint(r[wordtype][0], len(z))
+        line = z[index]
+        d = line.split('|')
+        word = d[0].split(' ')[4]
+        word = word.replace('_',' ')
+        word = word.replace('(a)','')
+
+
+        if wordtype == 'noun':
+          teamname += ' '
+
+          if allit:
+            while word[0] != teamname[0]:
+              index = random.randint(r[wordtype][0], len(z))
+              line = z[index]
+              d = line.split('|')
+              word = d[0].split(' ')[4]
+              word = word.replace('_',' ')
+              word = word.replace('(a)','')
+
+        teamname += word
+
+      if len(teamname) < 16:
+        goodlen = True
+      out = {'word':teamname}
 
     self.response.write(json.dumps(out))
 
@@ -130,6 +183,7 @@ application = webapp2.WSGIApplication( [
   ("/api/game/(.*)", GameList),
   ("/api/word/title", GetTitle),
   ("/api/word/emotion", GetEmotion),
+  ("/api/word/teamname/(.*)", GetTeamName),
   ("/api/word/(.*)", GetWord),
   ("/api/submit/(.*)", ContactEmail),
   ("/api/tweets/(.*)", GetTweets),

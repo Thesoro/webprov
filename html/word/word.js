@@ -16,6 +16,8 @@ angular.module('myApp.word', ['ngRoute'])
   $scope.wordtype = ''
   $scope.w = {}
   $scope.teamname = ''
+  $scope.allit = {}
+  $scope.allit.allit = false
 
   $scope.randomWord = function() {
     $scope.getWord();
@@ -35,16 +37,16 @@ angular.module('myApp.word', ['ngRoute'])
         $scope.wordlist['verb'] = res
       })
     } else if ($scope.wordtype == "teamname") {
-      $scope.teamname = ''
-
-      $http.get("/api/word/adj").success(function (re) {
-        $scope.teamname += re['word']
-        $http.get("/api/word/noun").success(function (res) {
-          $scope.teamname += (" " + res['word'])
-          if ($scope.teamname.length > 15) {
-            $scope.getWord()
-          }
-        })
+      $scope.teamname = 'loading...'
+      $scope.getname = "/api/word/teamname/"
+      $log.info($scope.allit.allit)
+      if ($scope.allit.allit) {
+        $scope.getname = $scope.getname + "y"
+      } else {
+        $scope.getname = $scope.getname + "n"
+      }
+      $http.get($scope.getname).success(function (re) {
+        $scope.teamname = re['word']
       })
 
     } else if (['adj','adv','noun','verb','title','emotion'].indexOf($scope.wordtype != -1)) {
